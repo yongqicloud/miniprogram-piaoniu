@@ -1,0 +1,13 @@
+<view class="header">
+  <view class="city">
+    北京
+    <view class="expand"></view>
+  </view>
+  <view class="search-wrap">
+    <view class="search">
+      <cover-image src="/assets/images/search-dark.png"/>
+      <view class="placeholder">搜索明星、演出、场馆</view>
+    </view>
+  </view>
+
+</view>

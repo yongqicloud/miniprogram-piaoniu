@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "search-input-wrap":"/components/search-input-wrap/search-input-wrap",
+    "self-swiper":"./self-swiper/self-swiper"
+  }
 }
