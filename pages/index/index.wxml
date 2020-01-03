@@ -1,0 +1,11 @@
+<!--pages/index/index.wxml-->
+<view class="body">
+  
+  首页
+  <!-- <view class="nav">
+    <navigator url="/pages/search/search">搜索1</navigator>
+    <navigator url="/pages/search/search">搜索2</navigator>
+    <navigator url="/pages/search/search">搜索3</navigator>
+    <navigator url="/pages/search/search">搜索4</navigator>
+  </view> -->
+</view>
