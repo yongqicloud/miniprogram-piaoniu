@@ -1,0 +1,36 @@
+<view class="operating-wrap">
+  <view class="operating-item">
+    <view class="title">
+      <image src="https://assets.piaoniu.com/home/op1-title-v2@3x.png" mode="widthFix"></image>
+      <view class="sub-title">0元看演出</view>
+    </view>
+    <view class="poster-wrap">
+      <view 
+        class="bg-image"
+        style="background-image:url(https://assets.piaoniu.com/home/op1-bgtext@3x.png)"
+      ></view>
+      <view 
+        class="poster"
+        style="background-image:urlhttps://img.piaoniu.com/misc/454e65ab8086894b5ccb07e1d59e1518212463bb.png)"
+      >
+      </view>
+    </view>
+  </view>
+  <view class="operating-item">
+    <view class="title">
+      <image src="https://assets.piaoniu.com/home/op2-title@3x.png" mode="widthFix"></image>
+      <view class="sub-title">限时限量抢</view>
+    </view>
+    <view class="poster-wrap">
+      <view 
+        class="bg-image"
+        style="background-image:url(https://assets.piaoniu.com/home/op2-bgtext@3x.png)"
+      ></view>
+      <view 
+        class="poster"
+        style="background-image:url(https://img.piaoniu.com/misc/1cca4af4f80feda66133b40c8ce0c196dbb1f9f2.png)"
+      >
+      </view>
+    </view>
+  </view>
+</view>

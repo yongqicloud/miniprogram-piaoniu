@@ -1,0 +1,36 @@
+.home-entries{
+  width: 100%;
+  background-color: #fff;
+  padding: 2px 16px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-categories,.sub-categories{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-categories navigator,.sub-categories navigator{
+  width: 25%;
+  margin-top: 40rpx;
+}
+.home-entries image{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.home-entries .name{
+  text-align: center;
+  font-size: 26rpx;
+  line-height: 32rpx;
+  color: #444;
+}
+.home-entries .main-categories image{
+  width: 84rpx;
+  height: 84rpx;
+}
+.home-entries .sub-categories image{
+  width: 54rpx;
+  height: 54rpx;
+}

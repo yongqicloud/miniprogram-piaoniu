@@ -1,0 +1,37 @@
+<view class="body">
+  <view class="title">今日精选</view>
+  <scroll-view
+    scroll-x="{{true}}"
+  >
+    <view class="nav">
+      <view class="nav-item active">精彩推荐</view>
+      <view
+        wx:for="{{list}}"
+        wx:key="*this"
+        class="nav-item"
+      >{{item.title}}</view>
+      
+    </view>
+  </scroll-view>
+  <scroll-view
+    class="nav-body-wrap-scoll"
+    scroll-x="{{true}}"
+  >
+    <view class="nav-body-wrap">
+      <view class="ticket-item">
+        <navigator>
+          <image mode="widthFix" src="https://img.piaoniu.com/poster/92bcac6fd5297728410af5fa121d21dd96ea10c6.jpg?imageView2/2/w/220/h/164/format/jpg/q/60"></image>
+          <view class="name">
+            威尼斯国际艺术双年展中国国家馆巡展
+          </view>
+          <view class="price-wrap">
+            <view class="price-num">
+              ￥{{2511}}
+            </view>
+            <view class="price-icon">演唱会</view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </scroll-view>
+</view>

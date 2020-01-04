@@ -1,0 +1,13 @@
+<!--pages/index/service-entry/service-entry.wxml-->
+<view class="service-wrap">
+  <view class="service-body">
+    <view class="left">服务保障</view>
+    <view class="right">
+      <view class="right-item">无票赔付</view>
+      <view class="line"></view>
+      <view class="right-item">出票保真</view>
+      <view class="line"></view>
+      <view class="right-item">配送保障</view>
+    </view>
+  </view>
+</view>

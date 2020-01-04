@@ -1,6 +1,10 @@
 {
   "usingComponents": {
     "search-input-wrap":"/components/search-input-wrap/search-input-wrap",
-    "self-swiper":"./self-swiper/self-swiper"
+    "self-swiper":"./self-swiper/self-swiper",
+    "home-entries":"./home-entries/home-entries",
+    "operating-position":"./operating-position/operating-position",
+    "service-entry":"./service-entry/service-entry",
+    "nav-swiper":"./nav-swiper/nav-swiper"
   }
 }
