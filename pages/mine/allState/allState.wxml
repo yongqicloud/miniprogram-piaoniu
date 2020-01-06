@@ -1,0 +1,18 @@
+<!--pages/mine/allState/allState.wxml-->
+<view class="allStateCon">
+   <view class="allStateitem">
+     <view class="icon-topay">
+     </view>
+     待付款
+   </view>
+    <view class="allStateitem">
+    <view class="second">
+     </view>
+    待发货
+   </view>
+    <view class="allStateitem">
+     <view class="three">
+     </view>
+     待收货
+    </view>
+</view>

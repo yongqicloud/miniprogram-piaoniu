@@ -1,0 +1,30 @@
+<!--pages/mine/Welfare/Welfare.wxml-->
+<view class="welfarecon">
+  <view class="title">
+    我的福利
+  </view>
+  <view class="content">
+    <view class="contentitem">
+      <view class="imgbox"></view>
+      <view class="maincon">
+        <view class="infotitle">
+          邀请好友
+        </view>
+        <view class="infodec">
+         返现10元现金
+        </view>
+      </view>
+    </view>
+     <view class="contentitem">
+      <view class="imgbox1"></view>
+      <view class="maincon">
+        <view class="infotitle">
+          圈圈俱乐部
+        </view>
+        <view class="infodec">
+          达人专属奖励
+        </view>
+        </view>
+    </view>
+  </view>
+</view>

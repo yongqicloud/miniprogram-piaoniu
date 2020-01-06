@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/mine/mine",
     "pages/index/index",
     "pages/perform/perform",
-    "pages/find/find",
-    "pages/mine/mine"
+    "pages/find/find"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -19,7 +19,7 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath":"/assets/images/home.png",
+        "iconPath": "/assets/images/home.png",
         "selectedIconPath": "/assets/images/home-active.png",
         "text": "首页"
       },
@@ -30,13 +30,13 @@
         "text": "演出"
       },
       {
-        "pagePath":"pages/find/find",
+        "pagePath": "pages/find/find",
         "iconPath": "/assets/images/find.png",
         "selectedIconPath": "/assets/images/find-active.png",
         "text": "发现"
       },
       {
-        "pagePath":"pages/mine/mine",
+        "pagePath": "pages/mine/mine",
         "iconPath": "/assets/images/person.png",
         "selectedIconPath": "/assets/images/person-active.png",
         "text": "发现"

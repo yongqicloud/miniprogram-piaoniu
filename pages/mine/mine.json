@@ -1,6 +1,11 @@
 {
   "component": true,
-  "usingComponents": {},
+  "usingComponents": {
+    "myOrder":"./myOrder/myOrder",
+    "allState":"./allState/allState",
+    "Favour":"./Favour/Favour",
+    "Welfare":"./Welfare/Welfare"
+  },
   "backgroundTextStyle": "light",
   "navigationBarBackgroundColor": "#fff",
   "navigationBarTitleText": "个人中心",
