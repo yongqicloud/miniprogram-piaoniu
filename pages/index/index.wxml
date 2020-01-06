@@ -1,5 +1,18 @@
-<!--pages/index/index.wxml-->
+
 <view class="body">
   <search-input-wrap />
-  <self-swiper></self-swiper>
+  <scroll-view
+    scroll-y="{{true}}"
+  >
+    <self-swiper />
+    <home-entries />
+    <operating-position />
+    <service-entry />
+    <view class="middle-banner">
+      <image src="https://img.piaoniu.com/misc/6b98ea30efc679aa878992917bed9cee53ca1fdc.png" mode="widthFix"></image>
+    </view>
+    <nav-swiper />
+
+    <view class="space"> </view>
+  </scroll-view>
 </view>

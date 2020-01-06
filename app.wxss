@@ -1,1 +1,9 @@
 /**app.wxss**/
+view{
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    color: #262626;
+    font-size: 14px;
+    font-family: PingFang SC,Lantinghei SC,Roboto,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+}

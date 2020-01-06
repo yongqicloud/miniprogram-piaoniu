@@ -1,7 +1,15 @@
 <view class="page-section page-section-spacing swiper">
-  <swiper indicator-dots="{{true}}"
-    autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}" circular="{{true}}">
-    <block wx:for="{{background}}" wx:key="*this">
+  <swiper 
+    indicator-dots="{{true}}"
+    autoplay="{{false}}" 
+    interval="{{3000}}" 
+    duration="{{1000}}" 
+    circular="{{true}}"
+  >
+    <block 
+      wx:for="{{background}}" 
+      wx:key="*this"
+    >
       <swiper-item>
         <view class="swiper-item {{item}}">
         <cover-image src="{{item}}"></cover-image>

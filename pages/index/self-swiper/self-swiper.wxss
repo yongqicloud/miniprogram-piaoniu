@@ -1,4 +1,11 @@
-/* pages/index/self-swiper/self-swiper.wxss */
-/* swiper-item:nth-child(1){
+
+.swiper{
+  box-sizing: border-box;
+  padding: 32rpx 32rpx 0;
   background: #fff;
-} */
+}
+swiper{
+  height: 208rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
