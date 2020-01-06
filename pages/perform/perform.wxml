@@ -1,2 +1,19 @@
 <!--pages/perform/perform.wxml-->
-<text>pages/perform/perform.wxml</text>
+<view class="performContainer">
+<view class="tabbar">
+
+<a>全部分类</a>
+<a>演唱会</a>
+<a>旅游玩乐</a>
+<a>话剧歌剧</a>
+<a>休闲展览</a>
+<a>体育赛事</a>
+<a>音乐会</a>
+<a>儿童亲子</a>
+<a>戏曲综艺</a>
+<a>舞蹈芭蕾</a>
+
+</view>
+<view class="pullBox"></view>
+<view class="listContainer"></view>
+</view>
