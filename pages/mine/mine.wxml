@@ -1,2 +1,46 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<!--pages/myprofile/myprofile.wxml-->
+<view class="wrap">
+  
+  <view class="content">
+    <view class="infobox">
+     <view class="user-pic">
+
+     </view>
+     <view class="user-page">登录</view>
+     <view class="person-tag">个人主页 ></view>
+    <view class="person-label">
+      <view class="label-item">
+          <view class="count">0</view>
+          <view class="item-content">
+            想看
+          </view>
+      </view>
+      <view class="label-item">
+          <view class="count">0</view>
+          <view class="item-content">
+            评论
+          </view>
+      </view>
+      <view class="label-item">
+          <view class="count">0</view>
+          <view class="item-content">
+            关注
+          </view>
+      </view>
+      <view class="label-item">
+          <view class="count">0</view>
+          <view class="item-content">
+            粉丝
+          </view>
+      </view>
+    </view>
+    </view>
+  </view>
+
+  <!-- <view class="nav">
+    <navigation-bar />
+  </view> -->
+ 
+
+</view>

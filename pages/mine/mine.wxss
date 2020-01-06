@@ -1,1 +1,75 @@
 /* pages/mine/mine.wxss */
+.content{
+  width:100%;
+  /* flex:1;*/
+}
+.infobox{
+  width:100%;
+  height:344rpx;
+ background: linear-gradient(270deg, #ff5aa5 0%, #ff2661 100%);
+  position: relative;
+}
+.user-pic{
+  width:112rpx;
+  height:112rpx;
+  border-radius:50%;
+  background:gray;
+  position: absolute;
+  left:36rpx;
+  top:74rpx;
+}
+.user-page{
+  width:100%;
+  height:56rpx;
+  padding-left:184rpx;
+  position:absolute;
+  top:80rpx;
+  font-size:36rpx;
+  color:#fff;
+  text-align: left;
+  line-height:46rpx;
+  display: flex;
+}
+
+.person-tag{
+  /* width:158rpx;
+  height:64rpx; */
+  width:156rpx;
+  height:64rpx;
+  position:absolute;
+  top:80rpx;
+  right:0;
+  text-align: right;
+  background: rgba(0, 0, 0, 0.13);
+  border-radius:28rpx 0 0 28rpx;
+  font-size:24rpx;
+  color:#fff;
+  line-height:64rpx;
+}
+
+.person-label{
+  width:100%;
+  height:98rpx;
+  display: flex;
+  position: absolute;
+  bottom:0;
+}
+.label-item{
+  font-size:28rpx;
+  color:#fff;
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.count{
+  flex:1;
+  width:100%;
+  text-align: center;
+}
+.item-content{
+  width:100%;
+  flex:1;
+  text-align: center;
+}
