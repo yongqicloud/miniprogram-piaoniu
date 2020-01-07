@@ -1,0 +1,13 @@
+<!--pages/mine/myOrder/myOrder.wxml-->
+
+<view class="orderCon">
+  <view class="tbv-row">
+    <view class="row-text">
+      我的订单
+    </view>
+    <view class="row-hint">
+      查看全部订单
+      <mp-icon icon="add" color="black" size="{{25}}"></mp-icon>
+    </view>
+  </view>
+</view>

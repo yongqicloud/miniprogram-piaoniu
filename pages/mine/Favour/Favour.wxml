@@ -1,0 +1,19 @@
+<!--pages/mine/Favour/Favour.wxml-->
+<view class="favourCon">
+  <view class="favouritem">
+    <view class="count">
+      0
+    </view>
+    <view class="itemcon">
+      优惠券
+    </view>
+  </view>
+  <view class="favouritem">
+    <view class="count">
+      0
+    </view>
+    <view class="itemcon">
+      礼品卡
+    </view>
+  </view>
+</view>

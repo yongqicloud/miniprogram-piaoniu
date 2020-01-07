@@ -1,0 +1,53 @@
+/* pages/mine/Welfare/Welfare.wxss */
+.welfarecon{
+  width:100%;
+  height:236rpx;
+  background:#fff;
+}
+.title{
+  width:100%;
+  height:78rpx;
+  padding-left:38rpx;
+  font-weight: 500;
+  line-height:78rpx;
+}
+.content{
+  height:158rpx;
+  width:100%;
+  display: flex;
+}
+.contentitem{
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left:38rpx;
+}
+.imgbox{
+  height:96rpx;
+  width:96rpx;
+  background:url(https://static.piaoniu.com/m/static/img/icon-redpackage.e078ab8.png);
+  background-size:96rpx 96rpx;
+}
+.imgbox1{
+  height:96rpx;
+  width:96rpx;
+  background:url(https://static.piaoniu.com/m/static/img/icon-club.959250b.png);
+  background-size:96rpx 96rpx;
+}
+.maincon{
+  flex: 1;
+  height:78rpx;
+  padding-left:10rpx;
+}
+.infotitle{
+  width:100%;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 9px;
+  color: #262626;
+}
+.infodec{
+    font-size: 22rpx;
+    color: #999;
+}

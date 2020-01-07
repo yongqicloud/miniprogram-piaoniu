@@ -1,0 +1,38 @@
+/* pages/index/theme-recommend/theme-recommend.wxss */
+.theme-recommend-wrap{
+  height: 300px;
+  width:100% ;
+  background:lightblue ;
+}
+.theme-recommend-wrap .title{
+  height: 160rpx;
+  color: #fff;
+  font-size:36rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 40rpx;
+}
+.my-swiper{
+  box-sizing: border-box;
+  height: 420rpx;
+  width: 100%;
+  background: lightcyan;
+  padding: 60rpx 0;
+}
+.my-swiper scroll-view{
+  width: 100%;
+  height:100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.my-swiper .swiper-body{
+  display: flex;
+  width: max-content;
+  height: 100%;
+}
+.my-swiper scroll-view .my-swiper-item{
+  background: lightcoral;
+  width: 26vw;
+  height: 100%;
+  margin-right: 20rpx;
+}

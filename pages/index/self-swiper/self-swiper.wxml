@@ -1,4 +1,5 @@
-<view class="page-section page-section-spacing swiper">
+
+<view class="self-swiper swiper">
   <swiper 
     indicator-dots="{{true}}"
     autoplay="{{false}}" 
