@@ -1,19 +1,39 @@
 <!--pages/perform/perform.wxml-->
+
 <view class="performContainer">
+<view>
 <view class="tabbar">
-
-<a>ȫ������</a>
-<a>�ݳ���</a>
-<a>��������</a>
-<a>������</a>
-<a>����չ��</a>
-<a>��������</a>
-<a>���ֻ�</a>
-<a>��ͯ����</a>
-<a>Ϸ������</a>
-<a>�赸����</a>
-
+<a>全部分类</a>
+<a>演唱会</a>
+<a>旅游玩乐</a>
+<a>话剧歌剧</a>
+<a>休闲展览</a>
+<a>体育赛事</a>
+<a>音乐会</a>
+<a>儿童亲子</a>
+<a>戏曲综艺</a>
+<a>舞蹈芭蕾</a>
 </view>
-<view class="pullBox"></view>
-<view class="listContainer"></view>
+<view class="pullBox">
+<view class="pullBox_top">
+	<view class="good_comment"  bindtap="showComment">综合排序</view>
+	<view class="time {{color?'colorred':'colorblack'}}" bindtap="showTime">全部时间</view>
+</view>
+	<view class="good_comment_container zIndex10" wx:if="{{show=='comment'}}">
+<view>综合排序</view>
+<view>最新优先</view>
+<view>低价优先</view>
+<view>好评优先</view>
+</view>
+<view class="time_container zIndex10" wx:elif="{{show=='time'}}">
+<view>全部时间</view>
+<view>一周内</view>
+<view>一月内</view>
+<view>本月末</view>
+</view>
+</view>
+</view>
+<view class="listContainer">
+<view class="list_shadow"></view>
+</view>
 </view>

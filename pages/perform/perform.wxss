@@ -1,1 +1,95 @@
 /* pages/perform/perform.wxss */
+.performContainer{
+	display: flex;
+	flex-direction: column;
+}
+.tabbar{
+	width: 100%;
+	 height: 80rpx;
+	overflow-x: auto;
+	white-space: nowrap;
+
+}
+
+.tabbar a{
+	display:inline-block;
+	margin: 0 30rpx;
+  padding: 20rpx 0;
+	font-size: 28rpx;
+	color:#333333;
+	font-family:PingFang SC,Lantinghei SC,Roboto,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+}
+.pullBox{
+		position:relative;
+}
+.pullBox_top{
+	width:100%;
+	height: 31rpx;
+	padding:20rpx 0;
+	display: flex;
+	align-items: center;
+  box-shadow: 0 0 8rpx 0 rgba(0,0,0,.15);
+
+
+}
+.pullBox_top view{
+	text-align: center;
+	font-size: 24rpx;
+	color:#333;
+}
+.pullBox_top view::after{
+	  content: "";
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 3px;
+    width: 0;
+    height: 0;
+    border: 6rpx solid transparent;
+    border-top-color: #666;
+    background-color: white;
+}
+.good_comment{
+	width:calc(50%);
+	border-right:1rpx solid #ddd;
+}
+.time{
+	width:calc(50%);
+}
+.good_comment_container{
+	
+}
+.time_container{
+
+}
+.zIndex10{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top:70rpx;
+}
+.zIndex10 view{
+	width: 100%;
+	height:30rpx;
+	padding:28rpx 0 28rpx 18rpx;
+}
+.listContainer{
+	flex:1;
+	position: relative;
+}
+.list_shadow{
+width: 100%;
+height: 100%;
+position: absolute;
+left:0;
+top:0;
+background-color:#999; 
+z-index:5;
+
+}
+.pullBox_top .colorred{
+	color:#ff2661;
+}
+.pullBox_top .colorblack{
+	color:#333333;
+}
