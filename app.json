@@ -2,7 +2,7 @@
   "pages": [
 		"pages/perform/perform",
     "pages/index/index",
- 
+		
     "pages/find/find",
     "pages/mine/mine"
   ],
