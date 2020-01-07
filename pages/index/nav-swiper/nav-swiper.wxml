@@ -25,8 +25,39 @@
             威尼斯国际艺术双年展中国国家馆巡展
           </view>
           <view class="price-wrap">
-            <view class="price-num">
-              ￥{{2511}}
+            <view class="price-num-content">
+              <text class="price-num-icon">￥ </text>
+              <text class="price">{{2511}}</text>
+            </view>
+            <view class="price-icon">演唱会</view>
+          </view>
+        </navigator>
+      </view>
+      <view class="ticket-item">
+        <navigator>
+          <image mode="widthFix" src="https://img.piaoniu.com/poster/92bcac6fd5297728410af5fa121d21dd96ea10c6.jpg?imageView2/2/w/220/h/164/format/jpg/q/60"></image>
+          <view class="name">
+            威尼斯国际艺术双年展中国国家馆巡展
+          </view>
+          <view class="price-wrap">
+            <view class="price-num-content">
+              <text class="price-num-icon">￥ </text>
+              <text class="price">{{2511}}</text>
+            </view>
+            <view class="price-icon">演唱会</view>
+          </view>
+        </navigator>
+      </view>
+      <view class="ticket-item">
+        <navigator>
+          <image mode="widthFix" src="https://img.piaoniu.com/poster/92bcac6fd5297728410af5fa121d21dd96ea10c6.jpg?imageView2/2/w/220/h/164/format/jpg/q/60"></image>
+          <view class="name">
+            威尼斯国际艺术双年展中国国家馆巡展
+          </view>
+          <view class="price-wrap">
+            <view class="price-num-content">
+              <text class="price-num-icon">￥ </text>
+              <text class="price">{{2511}}</text>
             </view>
             <view class="price-icon">演唱会</view>
           </view>

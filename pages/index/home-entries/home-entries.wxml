@@ -1,20 +1,24 @@
 <view class="home-entries">
   <view class="main-categories">
-    <navigator 
+    <view 
+      class="router-link"
       wx:for="{{main_list}}"
       wx:key="*this"
+      bindtap="myNavigator"
     >
       <image src="{{item.url}}"></image>
       <view class="name">{{item.title}}</view>
-    </navigator>
+    </view>
   </view>
   <view class="sub-categories">
-    <navigator 
+    <view 
+    class="router-link"
       wx:for="{{sub_list}}"
       wx:key="*this"
+      bindtap="myNavigator"
     >
       <image src="{{item.url}}"></image>
       <view class="name">{{item.title}}</view>
-    </navigator>
+    </view>
   </view>
 </view>

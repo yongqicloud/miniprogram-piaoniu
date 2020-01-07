@@ -4,15 +4,19 @@
   <scroll-view
     scroll-y="{{true}}"
   >
+    <!-- 轮播图 -->
     <self-swiper />
+    <!-- 金刚区 -->
     <home-entries />
+    <!-- 广告区 -->
     <operating-position />
     <service-entry />
     <view class="middle-banner">
       <image src="https://img.piaoniu.com/misc/6b98ea30efc679aa878992917bed9cee53ca1fdc.png" mode="widthFix"></image>
     </view>
+    <!-- 精选 -->
     <nav-swiper />
-
+    <theme-recommend />
     <view class="space"> </view>
   </scroll-view>
 </view>

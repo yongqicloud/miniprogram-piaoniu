@@ -46,14 +46,19 @@
 
 .nav-body-wrap-scoll{
   width: 100%;
-  height: 420rpx;
+  /* height: 420rpx; */
   padding-top: 40rpx;
   background: lavender;
 
 }
 
 .nav-body-wrap{
-  padding-left: 40rpx;
+  padding-left: 20rpx;
+  width: max-content;
+  height: 100%;
+  display:flex;
+  flex-wrap: wrap;
+
 }
 .ticket-item{
   width: 204rpx;
@@ -76,14 +81,36 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
+  font-size: 24rpx;
 }
 .ticket-item navigator .price-wrap{
   height:60rpx ;
-  padding-top: 20rpx;
+  /* padding-top: 20rpx; */
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
 }
-.ticket-item navigator .price-wrap .price-num{
-  color: palevioletred;
-} 
+.ticket-item navigator .price-wrap .price-num-content{
+  color: #F43A6D;
+  display: flex;
+  align-items: center;
+}
+.price-num-icon{
+  flex-shrink: 24rpx;
+  transform: scale(0.8);
+  
+}
+.price{
+  font-size: 30rpx;
+  font-weight: 500;
+}
+.price-icon{
+  border: 2rpx solid #ccc;
+  font-size: 24rpx;
+  color: #ccc;
+  padding: 6rpx;
+  display: flex;
+  align-items: center;
+  transform: scale(0.7);
+}

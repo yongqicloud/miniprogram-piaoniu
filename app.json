@@ -39,7 +39,7 @@
         "pagePath": "pages/mine/mine",
         "iconPath": "/assets/images/person.png",
         "selectedIconPath": "/assets/images/person-active.png",
-        "text": "发现"
+        "text": "我的"
       }
     ]
   },
