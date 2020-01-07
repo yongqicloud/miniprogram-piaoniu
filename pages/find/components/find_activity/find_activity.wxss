@@ -1,0 +1,46 @@
+/* pages/find/components/find_ activity/find_ activity.wxss */
+.find_activity_wrap{
+  margin: 0 auto;
+  width: calc( 100% - 56rpx );
+  padding-top: 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.find_activity_item{
+  position: relative;
+  padding-left: 27rpx;
+  width: 224rpx;
+  height: 130rpx;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5rpx #f8f8f8;
+  z-index: 5;
+}
+.find_activity_item .txt-t{
+  font-size: 30rpx;
+  color : #272727;
+  margin-top: 21rpx;
+  font-weight: bold;
+  z-index: 15; 
+}
+.find_activity_item .txt-b{
+  font-size: 22rpx;
+  color : #9f9f9f;
+  margin-top: 19rpx; 
+}
+.find_activity_item .en{
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  transform: translateY(-20%);
+  font-weight: bold;
+  right: 0;
+  color : #f7f7f7;
+  font-size: 30rpx;
+}
+.find_activity_item .icon{
+  position: absolute;
+  bottom: 10rpx;
+  right: 10rpx;
+  width: 30rpx;
+}

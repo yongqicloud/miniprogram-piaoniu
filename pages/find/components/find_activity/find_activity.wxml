@@ -1,0 +1,30 @@
+<!--pages/find/components/find_ activity/find_ activity.wxml-->
+<view class="find_activity_wrap">
+  <view class="find_activity_item">
+    <view class="en">Application</view>
+    <text class="txt-t">免费活动</text>
+    <text class="txt-b">超多福利哦</text>
+    <view class="icon">
+      <cover-image src="../../images/find_actv_1.png"></cover-image>
+    </view>
+  </view>
+  
+  <view class="find_activity_item">
+    <view class="en">VIDEOS</view>
+    <text class="txt-t">拍客现场</text>
+    <text class="txt-b">看拍客攻略</text>
+    <view class="icon">
+      <cover-image src="../../images/find_actv_2.png"></cover-image>
+    </view>
+  </view>
+
+  <view class="find_activity_item">
+    <view class="en">Rewards</view>
+    <text class="txt-t">每日奖励</text>
+    <text class="txt-b">100元未领取</text>
+    <view class="icon">
+      <cover-image src="../../images/find_actv_3.png"></cover-image>
+    </view>
+  </view>
+
+</view>

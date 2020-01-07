@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/find/find",
     "pages/index/index",
     "pages/perform/perform",
-    "pages/find/find",
     "pages/mine/mine"
   ],
   "window": {

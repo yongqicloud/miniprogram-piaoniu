@@ -1,0 +1,18 @@
+<!--pages/find/components/find_video/find_video.wxml-->
+<view class="find_video_wrap">
+  <view class="find_video_item">
+    <view class="item_t">
+       <view class="video_icon_container">
+          <mp-icon class="video_icon" icon="video-call" size="20" color="#fff"></mp-icon>
+          <text>414</text>
+       </view>
+    </view>
+    <view class="item_b">
+        <text>话剧《老友记》开心麻花爆笑ww我</text>
+    </view>
+  </view>
+  
+  <view class="find_video_item">
+   
+  </view>
+</view>
