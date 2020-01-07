@@ -1,0 +1,39 @@
+<view class="theme-recommend-wrap">
+
+<view class="swiper">
+  <swiper 
+    autoplay="{{false}}" 
+    interval="{{3000}}" 
+    duration="{{1000}}" 
+    circular
+    display-multiple-items="{{3}}"
+    previous-margin="20rpx"
+    next-margin="20rpx"
+  >
+    <block 
+      wx:for="{{background}}" 
+      wx:key="*this"
+    >
+      <swiper-item>
+        <view class="swiper-item {{item}}">
+        <cover-image src="{{item}}"></cover-image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- <view class="title">
+  主题推荐
+  </view>
+  <view class="my-swiper">
+    <scroll-view
+      scroll-x="{{true}}"
+    >
+      <view class="swiper-body">
+        <view class="my-swiper-item"></view>
+        <view class="my-swiper-item"></view>
+        <view class="my-swiper-item"></view>
+      </view>
+    </scroll-view>
+  </view> -->
+</view>
+</view>
