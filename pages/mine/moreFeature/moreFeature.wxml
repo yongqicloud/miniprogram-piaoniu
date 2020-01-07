@@ -1,0 +1,19 @@
+<!--pages/mine/moreFeature/moreFeature.wxml-->
+<view class="featureCon">
+  <view class="featureitem">
+    <view class="itemcon">地址管理</view>
+    <view class="conicon"></view>
+  </view>
+  <view class="featureitem">
+    <view class="itemcon">帮助与客服</view>
+    <view class="conicon"></view>
+  </view>
+  <view class="featureitem">
+    <view class="itemcon">隐私协议</view>
+    <view class="conicon"></view>
+  </view>
+  <view class="featureitem">
+    <view class="itemcon">卖家招募</view>
+    <view class="conicon"></view>
+  </view>
+</view>

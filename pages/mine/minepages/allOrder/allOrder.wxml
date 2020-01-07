@@ -1,0 +1,23 @@
+<!--pages/mine/pages/allOrder/allOrder.wxml-->
+
+
+<view class="allOrdercon">
+
+  <view class="navbar">
+  <!-- <view class="btn-left">
+
+  </view> -->
+  <view class="middle-wrap" bindtap="allkinds">
+     我的订单
+  </view>
+</view>
+
+ <view class="detail-pop">
+  <view class="detail-pop__content">
+  
+  </view>
+  <view class="detail-pop__close">
+  
+  </view>
+</view>
+</view>

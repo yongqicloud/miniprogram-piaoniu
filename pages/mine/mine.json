@@ -4,7 +4,9 @@
     "myOrder":"./myOrder/myOrder",
     "allState":"./allState/allState",
     "Favour":"./Favour/Favour",
-    "Welfare":"./Welfare/Welfare"
+    "Welfare":"./Welfare/Welfare",
+    "moreFeature":"./moreFeature/moreFeature",
+    "search":"../../components/search-input-wrap/search-input-wrap"
   },
   "backgroundTextStyle": "light",
   "navigationBarBackgroundColor": "#fff",

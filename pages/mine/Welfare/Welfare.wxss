@@ -3,6 +3,7 @@
   width:100%;
   height:236rpx;
   background:#fff;
+  margin-bottom:20rpx;
 }
 .title{
   width:100%;

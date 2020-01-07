@@ -1,4 +1,4 @@
-// pages/mine/myOrder/myOrder.js
+// pages/mine/pages/allOrder/allOrder.js
 Component({
   /**
    * 组件的属性列表
@@ -18,11 +18,8 @@ Component({
    * 组件的方法列表
    */
   methods: {
-     checkOrder(){
-       wx.redirectTo({
-         url:'/pages/mine/minepages/allOrder/allOrder',
-       })
-       console.log("1")
-     }
+    allkinds(e){
+      console.log(e.current);
+    }
   }
 })
