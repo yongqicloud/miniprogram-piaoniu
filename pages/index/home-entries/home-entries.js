@@ -71,6 +71,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    myNavigator(){
+      console.log(1)
+      wx.switchTab({
+        url:'/pages/perform/perform'
+      })
+    }
   }
 })
