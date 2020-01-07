@@ -1,0 +1,17 @@
+<view class="waterfall-flow">
+
+  <view class="title">发现精彩</view>
+  <scroll-view
+    scroll-x="{{true}}"
+  >
+    <view class="nav">
+      <view
+        wx:for="{{name_list}}"
+        wx:key="*this"
+        class="nav-item {{activeClass === item.title ? 'active' : ''}}"
+        bindtap="checkoutNav"
+        data-title="{{item.title}}"
+      >{{item.title}}</view>
+    </view>
+  </scroll-view>
+</view>

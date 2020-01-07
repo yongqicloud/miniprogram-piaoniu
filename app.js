@@ -4,31 +4,37 @@ App({
       id: 1,
       url: 'http://assets.piaoniu.com/home/icons/category-live-large.png',
       title: '演唱会',
+      categoryId: 2
     },
     {
       id: 2,
       url: 'http://assets.piaoniu.com/home/icons/category-drama-large.png',
       title: '话剧歌剧',
+      categoryId: 5,
     },
     {
       id: 3,
       url: 'http://assets.piaoniu.com/home/icons/category-exibition-large.png',
       title: '休闲展览',
+      categoryId: 5
     },
     {
       id: 4,
       url: 'http://assets.piaoniu.com/home/icons/category-sports-large.png',
       title: '体育赛事',
+      categoryId: 8
     },
     {
       id: 5,
       url: 'http://assets.piaoniu.com/home/icons/category-concert-large.png',
       title: '音乐会',
+      categoryId: 3
     },
     {
       id: 6,
       url: 'http://assets.piaoniu.com/home/icons/category-child-small-v2.png',
       title: '儿童亲子',
+      categoryId: 4
     },
     {
       id: 6,
@@ -39,16 +45,19 @@ App({
       id: 6,
       url: 'http://assets.piaoniu.com/home/icons/category-dance-small.png',
       title: '舞蹈芭蕾',
+      categoryId: 7
     },
     {
       id: 6,
       url: 'http://assets.piaoniu.com/home/icons/category-travel-small.png',
       title: '旅游玩乐',
+      categoryId: 9
     },
     {
       id: 6,
       url: 'http://assets.piaoniu.com/home/icons/category-play-small-v2.png',
       title: '更多精彩',
+      categoryId: 0
     },
   ],
   /**

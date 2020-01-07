@@ -6,6 +6,7 @@
     "operating-position":"./operating-position/operating-position",
     "service-entry":"./service-entry/service-entry",
     "nav-swiper":"./nav-swiper/nav-swiper",
-    "theme-recommend":"./theme-recommend/theme-recommend"
+    "theme-recommend":"./theme-recommend/theme-recommend",
+    "waterfalls-flow":"./waterfalls-flow/waterfalls-flow"
   }
 }
