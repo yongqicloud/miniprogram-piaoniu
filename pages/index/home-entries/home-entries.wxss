@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
 }
-.main-categories navigator,.sub-categories navigator{
+.main-categories .router-link,.sub-categories .router-link{
   width: 25%;
   margin-top: 40rpx;
 }

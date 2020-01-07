@@ -1,0 +1,24 @@
+/* pages/find/find_top.wxss */
+
+.find_top_container{
+  position: relative;
+   width: 100%;
+  height: 88rpx;
+}
+.find_top{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.find_top_text{
+  font-size: 31rpx;
+  font-weight: bold;
+  padding: 0 38rpx; 
+}
+.top_add_icon{
+  position: absolute;
+  top: calc( 50% - 31rpx);
+  right: 27rpx;
+}

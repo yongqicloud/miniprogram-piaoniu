@@ -1,0 +1,16 @@
+/* find_banner.wxss */
+.find_banner{
+  width: 100%;
+  height: 200rpx;
+}
+
+.swiper{
+  box-sizing: border-box;
+  padding: 32rpx 32rpx 0;
+  background: #fff;
+}
+swiper{
+  height: 208rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}

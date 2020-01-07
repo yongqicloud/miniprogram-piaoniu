@@ -1,10 +1,10 @@
 
-.swiper{
+.self-swiper.swiper{
   box-sizing: border-box;
   padding: 32rpx 32rpx 0;
   background: #fff;
 }
-swiper{
+.self-swiper swiper{
   height: 208rpx;
   border-radius: 10rpx;
   overflow: hidden;

@@ -1,0 +1,21 @@
+<!-- find_banner -->
+<!-- <view>
+  <cover-image class="find_banner" src="../../images/find_banner.png"></cover-image>
+</view> -->
+    <view class="find_banner">
+      <swiper 
+        indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" 
+        interval="{{interval}}" 
+        duration="{{duration}}"
+        circular="{{circular}}"
+      >
+        <!-- 遍历background block 渲染一个包含多节点的结构块-->
+        <block wx:for="{{background}}" wx:key="*this">
+        <!-- 显示 -->
+          <swiper-item>
+            <cover-image src="{{item}}" class="swiper-item {{item}}"></cover-image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
