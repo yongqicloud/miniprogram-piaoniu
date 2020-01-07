@@ -1,5 +1,6 @@
 {
   "pages": [
+
     "pages/index/index",
 		"pages/perform/perform",
     "pages/find/find",
