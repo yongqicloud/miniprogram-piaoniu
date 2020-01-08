@@ -7,17 +7,46 @@
   <!-- <view class="btn-left">
 
   </view> -->
-  <view class="middle-wrap" bindtap="allkinds">
-     我的订单
+    <view id="middle-wrap" bindtap="allkinds" style="color:{{fontcolor}}">
+      我的订单
+    </view>
   </view>
-</view>
 
- <view class="detail-pop">
-  <view class="detail-pop__content">
-  
+  <view class="detail-pop" wx:if="{{show}}">
+      <view class="detail-pop__content">
+      
+      </view>
+      <view class="detail-pop__close" bindtap="closetap">
+      
+      </view>
   </view>
-  <view class="detail-pop__close">
-  
+
+  <view class="mainCon">
+    <view class="tab">
+     <view class="tabitem" bindtap="handlefrist">
+       全部
+     </view>
+     <view class="tabitem" bindtap="handletwo">
+       待付款
+     </view>
+     <view class="tabitem" bindtap="handlethree">
+       待发货
+     </view>
+     <view class="tabitem" bindtap="handlefour">
+       待收货
+     </view>
+    </view>
+    <view class="listCon frist" wx:if="{{allstate.frist}}">
+       <stateDate></stateDate>
+    </view>
+     <view class="listCon frist" wx:if="{{allstate.two}}">
+    2
+    </view>
+     <view class="listCon frist" wx:if="{{allstate.three}}">
+    3
+    </view>
+     <view class="listCon frist" wx:if="{{allstate.four}}">
+    4
+    </view>
   </view>
-</view>
 </view>

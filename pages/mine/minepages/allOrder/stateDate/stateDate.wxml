@@ -1,0 +1,7 @@
+<!--pages/mine/minepages/allOrder/stateDate/stateDate.wxml-->
+
+<view class="con">
+ <view wx:for="{{orderlist}}" wx:key="*this">
+  {{item.recommendContent.properName}}
+ </view>
+</view>
