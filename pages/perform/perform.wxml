@@ -1,39 +1,46 @@
 <!--pages/perform/perform.wxml-->
 
 <view class="performContainer">
-<view>
-<view class="tabbar">
-<a>全部分类</a>
-<a>演唱会</a>
-<a>旅游玩乐</a>
-<a>话剧歌剧</a>
-<a>休闲展览</a>
-<a>体育赛事</a>
-<a>音乐会</a>
-<a>儿童亲子</a>
-<a>戏曲综艺</a>
-<a>舞蹈芭蕾</a>
-</view>
-<view class="pullBox">
-<view class="pullBox_top">
-	<view class="good_comment"  bindtap="showComment">综合排序</view>
-	<view class="time {{color?'colorred':'colorblack'}}" bindtap="showTime">全部时间</view>
-</view>
-	<view class="good_comment_container zIndex10" wx:if="{{show=='comment'}}">
-<view>综合排序</view>
-<view>最新优先</view>
-<view>低价优先</view>
-<view>好评优先</view>
-</view>
-<view class="time_container zIndex10" wx:elif="{{show=='time'}}">
-<view>全部时间</view>
-<view>一周内</view>
-<view>一月内</view>
-<view>本月末</view>
-</view>
-</view>
-</view>
-<view class="listContainer">
-<view class="list_shadow"></view>
-</view>
+  <view>
+    <searchbox></searchbox>
+  </view>
+  <view>
+    <view class="tabbar dots">
+      <a wx:for="{{dots}}" wx:key="unique" data-i='{{index}}' bindtap="changeSwiper" class="{{index==swiperCurrent?'showunderline':''}}" >{{dots[index]}}</a>
+    </view>
+    <view class="pullBox">
+      <view class="pullBox_top">
+        <view class="good_comment {{color=='综合排序'?'colorred':'colorblack'}}" bindtap="showOrder">{{order}}</view>
+        <view class="time {{color=='全部时间'?'colorred':'colorblack'}}" bindtap="showTime">{{time}}</view>
+      </view>
+      <view class="good_comment_container zIndex10" wx:if="{{show=='comment'}}">
+        <view class="{{color=='综合排序'?'colorred':'colorblack'}}" data-text="综合排序" bindtap="handleOrder">综合排序</view>
+        <view class="{{color=='最新优先'?'colorred':'colorblack'}}" data-text="最新优先" bindtap="handleOrder">最新优先</view>
+        <view class="{{color=='低价优先'?'colorred':'colorblack'}}" data-text="低价优先" bindtap="handleOrder">低价优先</view>
+        <view class="{{color=='好评优先'?'colorred':'colorblack'}}" data-text="好评优先" bindtap="handleOrder">好评优先</view>
+      </view>
+      <view class="time_container zIndex10" wx:elif="{{show=='time'}}">
+        <view class="{{color=='全部时间'?'colorred':'colorblack'}}" data-text="全部时间" bindtap="handleTime">全部时间</view>
+        <view class="{{color=='一周内'?'colorred':'colorblack'}}" data-text="一周内" bindtap="handleTime">一周内</view>
+        <view class="{{color=='一月内'?'colorred':'colorblack'}}" data-text="一月内" bindtap="handleTime">一月内</view>
+        <view class="{{color=='本月末'?'colorred':'colorblack'}}" data-text="本月末" bindtap="handleTime">本月末</view>
+      </view>
+    </view>
+  </view>
+  <view class="listContainer">
+    <view class="{{showshadow?'list_shadow':''}}" bindtap="hiddenShadow"></view>
+    <swiper class="swiper" current="{{swiperCurrent}}" 
+      bindchange="swiperChange">
+      <swiper-item><all_sort></all_sort></swiper-item>
+      <swiper-item><vocal_concert></vocal_concert></swiper-item>
+      <swiper-item><amusement></amusement></swiper-item>
+      <swiper-item><opera></opera></swiper-item>
+      <swiper-item><exhibition></exhibition></swiper-item>
+      <swiper-item><sports_events></sports_events></swiper-item>
+      <swiper-item><concert></concert></swiper-item>
+      <swiper-item><children></children></swiper-item>
+    	<swiper-item><drama_synthesis></drama_synthesis></swiper-item>
+      <swiper-item><dance_ballad></dance_ballad></swiper-item>
+    </swiper>
+  </view>
 </view>

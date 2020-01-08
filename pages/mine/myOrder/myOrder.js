@@ -18,6 +18,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+     checkOrder(){
+       wx.redirectTo({
+         url:'/pages/mine/minepages/allOrder/allOrder',
+       })
+       console.log("1")
+     }
   }
 })

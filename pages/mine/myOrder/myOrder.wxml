@@ -5,7 +5,7 @@
     <view class="row-text">
       我的订单
     </view>
-    <view class="row-hint">
+    <view class="row-hint" bindtap="checkOrder">
       查看全部订单
       <mp-icon icon="add" color="black" size="{{25}}"></mp-icon>
     </view>

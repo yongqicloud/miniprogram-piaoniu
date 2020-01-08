@@ -1,4 +1,15 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+      "find_top" : "./components/find_top/find_top",
+      "find_banner" : "./components/find_banner/find_banner",
+      "find_activity" : "./components/find_activity/find_activity",
+      "find_video" : "./components/find_video/find_video"
+  },
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "发现",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
 }

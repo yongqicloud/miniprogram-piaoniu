@@ -1,0 +1,47 @@
+/* pages/find/components/find_video/find_video.wxss */
+.find_video_wrap{
+  margin: 0 auto;
+  width: calc( 100% - 56rpx );
+  padding-top: 32rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.find_video_item{
+  position: relative;
+  width: 342rpx;
+  height: 206rpx;
+  box-shadow: 0 0 10rpx #f7f7f7;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+.item_t{
+  height: 148rpx;
+  background-color: pink;
+  position: relative;
+}
+.item_b{
+  height: 58rpx;
+  line-height: 58rpx;
+  background-color: red;
+  overflow : hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-left: 13rpx;
+}
+.video_icon_container{
+  position: absolute;
+  bottom: 15rpx;
+  left: 15rpx;
+  display: flex;
+  align-items: center;
+}
+.video_icon_container text{
+  color : #fff;
+  font-size: 22rpx;
+  margin-left: 10rpx;
+}
+.item_b text{
+  color : #272727;
+  font-size: 24rpx;
+  font-weight: bold;
+}

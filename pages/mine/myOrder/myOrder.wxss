@@ -23,7 +23,7 @@
 
 .row-hint{
   flex:1;
-  padding-right:38rpx;
+  padding-right:76rpx;
   text-align:right;
   line-height:90rpx;
   font-size: 28rpx;

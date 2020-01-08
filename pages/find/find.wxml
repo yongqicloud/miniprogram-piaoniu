@@ -1,2 +1,18 @@
 <!--pages/find/find.wxml-->
-<text>find</text>
+<view class="find_wrap">
+  <!-- hot -->
+  <view>
+    <!-- 父组件里定义  子组件去触发 -->
+    <find_top bindHotType="handelHotType"></find_top> 
+    {{hot}}
+    <view wx:if="{{hot}}">
+      <find_banner></find_banner>
+      <find_activity></find_activity>
+      <find_video></find_video>
+    </view>
+  </view>
+  <!-- 关注 -->
+  <view wx:if="{{!hot}}">
+    <view>关注</view>
+  </view>
+</view>

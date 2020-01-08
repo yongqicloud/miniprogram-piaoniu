@@ -1,0 +1,15 @@
+<!--find_top-->
+<view class="find_top_container">
+  <!-- find_top -->
+  <view class="find_top">
+    <!-- 满足调价添加样式 -->     
+    <text class="find_top_text" bindtap="handelTopClick" data-text="热门">热门</text>
+    <text class="find_top_text" bindtap="handelTopClick" data-text="关注">关注</text>
+    <view wx:if="{{hot}}">1</view>
+    <view wx:if="{{!hot}}">2</view>
+  </view>
+  <!-- 小图标 -->
+  <view class="top_add_icon">
+    <mp-icon type="field" icon="add2" color="#f8496b" size="{{31}}"></mp-icon>
+  </view>
+</view>
