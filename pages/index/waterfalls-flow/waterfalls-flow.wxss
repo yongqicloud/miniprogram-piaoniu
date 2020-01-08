@@ -1,4 +1,7 @@
 /* pages/index/waterfalls-flow/waterfalls-flow.wxss */
+.waterfall-flow{
+  /* padding: 0 40rpx; */
+}
 .waterfall-flow .title{
   box-sizing: border-box;
   width: 100%;
@@ -51,4 +54,18 @@
 }
 .waterfall-flow .nav-item{
   font-size: 24rpx;
+}
+
+/*  瀑布流主体 */
+.waterfalls-scroll-body-wrap{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 40rpx;
+}
+.waterfalls-scroll-body{
+  display: flex;
+}
+.scroll-left, .scroll-right{
+  width: 50%;
+  height: 300px;
 }

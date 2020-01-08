@@ -21,7 +21,8 @@ Component({
     },
     {
       title:'境外热卖'
-    }]
+    }],
+    list:[]
   },
 
   /**
@@ -37,7 +38,26 @@ Component({
   },
   lifetimes: {
     attached() {
+      wx.request({
+        url: 'https://api.piaoniu.com/v3/home/recommend?categoryType=0&pageIndex=1&pageSize=10',
+        success:(res)=>{
+          console.log(res.data)
+          const left_list = []
+          const right_list = []
 
+          res.data.data.forEach((item,index)=>{
+            if(index %2 === 1){
+              left_list.push(item)
+            }else{
+              right_list.push(item)
+            }
+          })     
+          this.setData({
+            left_list,
+            right_list
+          })     
+        }
+      })
     }
   }
 })

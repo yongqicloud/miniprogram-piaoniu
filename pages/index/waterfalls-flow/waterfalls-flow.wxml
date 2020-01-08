@@ -9,9 +9,31 @@
         wx:for="{{name_list}}"
         wx:key="*this"
         class="nav-item {{activeClass === item.title ? 'active' : ''}}"
-        bindtap="checkoutNav"
-        data-title="{{item.title}}"
+        bindtap="ch0eckoutNav"
+        data-tit000le="{{item.title}}"
       >{{item.title}}</view>
+    </view>
+  </scroll-view>
+  <scroll-view class="waterfalls-scroll-body-wrap">
+    <view class="waterfalls-scroll-body">
+
+      <view class="scroll-left">
+        <!-- <view 
+          class="item"
+          wx:for="{{left_list}}"
+          wx:key="*this"
+        >
+        </view> -->
+        <type-1 />
+      </view>
+      <view class="scroll-right">
+        <!-- <view 
+          class="item"
+          wx:for="{{right_list}}"
+          wx:key="*this"
+        ></view> -->
+        <type-2 />
+      </view>
     </view>
   </scroll-view>
 </view>

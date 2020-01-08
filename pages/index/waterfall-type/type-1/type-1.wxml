@@ -1,0 +1,16 @@
+<view class="water-item-wrap">
+  <image 
+    src="https://img.piaoniu.com/poster/e95b31823370879f5a694253e2807f03a504ee4a.jpg"
+    mode="widthFix"
+  ></image>
+  <view class="title">北京演唱会</view>
+  <view class="price-wrap">
+    <view>
+      <text class="price-num-left">￥</text>
+      <text class="price-num">1132</text>
+    </view>
+    <view class="price-icon">
+      演唱会 
+    </view>
+  </view>
+</view>
