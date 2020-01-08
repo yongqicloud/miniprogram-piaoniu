@@ -1,15 +1,15 @@
 {
 	"usingComponents": {
 		"searchbox": "../../components/search-input-wrap/search-input-wrap",
-		"all_sort": "../../components/all_sort/all_sort",
-		"amusement": "../../components/amusement/amusement",
-		"children": "../../components/children/children",
-		"concert": "../../components/concert/concert",
-		"dance_ballad": "../../components/dance_ballad/dance_ballad",
-		"drama_synthesis": "../../components/drama_synthesis/drama_synthesis",
-		"exhibition": "../../components/exhibition/exhibition",
-		"opera": "../../components/opera/opera",
-		"sports_events": "../../components/sports_events/sports_events",
-		"vocal_concert": "../../components/vocal_concert/vocal_concert"
+		"all_sort": "./components/all_sort/all_sort",
+		"amusement": "./components/amusement/amusement",
+		"children": "./components/children/children",
+		"concert": "./components/concert/concert",
+		"dance_ballad": "./components/dance_ballad/dance_ballad",
+		"drama_synthesis": "./components/drama_synthesis/drama_synthesis",
+		"exhibition": "./components/exhibition/exhibition",
+		"opera": "./components/opera/opera",
+		"sports_events": "./components/sports_events/sports_events",
+		"vocal_concert": "./components/vocal_concert/vocal_concert"
 	}
 }
