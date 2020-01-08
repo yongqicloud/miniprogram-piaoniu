@@ -8,9 +8,7 @@
 	 height: 80rpx;
 	overflow-x: auto;
 	white-space: nowrap;
-
 }
-
 .tabbar a{
 	display:inline-block;
 	margin: 0 30rpx;
@@ -108,6 +106,7 @@ z-index:5;
 	height:100%;
 	/* background-color: yellowgreen;  */
 }
-.showunderline{
-	border-bottom: 1rpx solid #ff2661;
+.active{
+	color:#ff2661;
+	border-bottom: 6rpx solid #ff2661;
 }

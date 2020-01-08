@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/mine/minepages/allOrder/allOrder",
     "pages/index/index",
-	  "pages/perform/perform",
+		"pages/perform/perform",
     "pages/find/find",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/mine/minepages/allOrder/allOrder"
   ],
   "window": {
     "backgroundTextStyle": "light",

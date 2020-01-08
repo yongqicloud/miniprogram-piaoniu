@@ -4,13 +4,20 @@
     scroll-x="{{true}}"
   >
     <view class="nav">
-      <view class="nav-item active">精彩推荐</view>
+      <view 
+        class="nav-item {{activeClass === '精彩推荐' ? 'active' : ''}}"
+        bindtap="checkoutNav"
+        data-title="精彩推荐"
+        data-categoryId="0"
+      >精彩推荐</view>
       <view
-        wx:for="{{list}}"
+        wx:for="{{name_list}}"
         wx:key="*this"
-        class="nav-item"
+        class="nav-item {{activeClass === item.title ? 'active' : ''}}"
+        bindtap="checkoutNav"
+        data-title="{{item.title}}"
+        data-categoryId="{{item.categoryId}}"
       >{{item.title}}</view>
-      
     </view>
   </scroll-view>
   <scroll-view
@@ -18,51 +25,28 @@
     scroll-x="{{true}}"
   >
     <view class="nav-body-wrap">
-      <view class="ticket-item">
+      <view 
+        class="ticket-item"
+        wx:for="{{list}}"
+        wx:key="*this"
+        wx:if="{{!item.discountRate}}"
+      >
         <navigator>
-          <image mode="widthFix" src="https://img.piaoniu.com/poster/92bcac6fd5297728410af5fa121d21dd96ea10c6.jpg?imageView2/2/w/220/h/164/format/jpg/q/60"></image>
+          <image mode="widthFix" src="{{item.poster}}"></image>
           <view class="name">
-            威尼斯国际艺术双年展中国国家馆巡展
+            {{item.shortname}}
           </view>
           <view class="price-wrap">
             <view class="price-num-content">
               <text class="price-num-icon">￥ </text>
-              <text class="price">{{2511}}</text>
+              <text class="price">{{item.lowPrice}}</text>
             </view>
             <view class="price-icon">演唱会</view>
           </view>
         </navigator>
       </view>
-      <view class="ticket-item">
-        <navigator>
-          <image mode="widthFix" src="https://img.piaoniu.com/poster/92bcac6fd5297728410af5fa121d21dd96ea10c6.jpg?imageView2/2/w/220/h/164/format/jpg/q/60"></image>
-          <view class="name">
-            威尼斯国际艺术双年展中国国家馆巡展
-          </view>
-          <view class="price-wrap">
-            <view class="price-num-content">
-              <text class="price-num-icon">￥ </text>
-              <text class="price">{{2511}}</text>
-            </view>
-            <view class="price-icon">演唱会</view>
-          </view>
-        </navigator>
-      </view>
-      <view class="ticket-item">
-        <navigator>
-          <image mode="widthFix" src="https://img.piaoniu.com/poster/92bcac6fd5297728410af5fa121d21dd96ea10c6.jpg?imageView2/2/w/220/h/164/format/jpg/q/60"></image>
-          <view class="name">
-            威尼斯国际艺术双年展中国国家馆巡展
-          </view>
-          <view class="price-wrap">
-            <view class="price-num-content">
-              <text class="price-num-icon">￥ </text>
-              <text class="price">{{2511}}</text>
-            </view>
-            <view class="price-icon">演唱会</view>
-          </view>
-        </navigator>
-      </view>
+      
+      
     </view>
   </scroll-view>
 </view>

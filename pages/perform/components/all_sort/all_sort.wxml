@@ -1,0 +1,2 @@
+<!--components/all_sort/all_sort.wxml-->
+<listitem datalist="{{datalist}}"></listitem>

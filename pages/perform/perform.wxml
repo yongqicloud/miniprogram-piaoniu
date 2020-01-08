@@ -6,7 +6,7 @@
   </view>
   <view>
     <view class="tabbar dots">
-      <a wx:for="{{dots}}" wx:key="unique" data-i='{{index}}' bindtap="changeSwiper" class="{{index==swiperCurrent?'showunderline':''}}" >{{dots[index]}}</a>
+      <a wx:for="{{dots}}" wx:key="unique" data-i='{{index}}' bindtap="changeSwiper" class="{{index==swiperCurrent?'active':''}}" >{{dots[index]}}</a>
     </view>
     <view class="pullBox">
       <view class="pullBox_top">

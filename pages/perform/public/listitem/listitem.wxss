@@ -1,0 +1,10 @@
+/* pages/perform/public/listitem.wxss */
+.listitemContainer{
+	min-height: 250rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img{
+
+}

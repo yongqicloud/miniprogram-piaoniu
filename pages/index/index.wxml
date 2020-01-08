@@ -16,7 +16,8 @@
     </view>
     <!-- 精选 -->
     <nav-swiper />
-    <theme-recommend />
+    <!-- <theme-recommend /> -->
+    <waterfalls-flow />
     <view class="space"> </view>
   </scroll-view>
 </view>
