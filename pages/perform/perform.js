@@ -51,14 +51,11 @@ Component({
     //   })
     // },
     changeSwiper: function(e) {
-      console.log(e.currentTarget.dataset.i)
       this.setData({
         swiperCurrent: e.currentTarget.dataset.i
       })
-      console.log(e)
     },
     swiperChange: function(e) {
-      // console.log(e)
       this.setData({
         swiperCurrent: e.detail.current
       })
@@ -71,7 +68,6 @@ Component({
       })
     },
     showOrder: function(e) {
-			console.log(this.data.order)
       let order = this.data.order
       if (this.data.show == 'comment') {
 				this.setData({
@@ -88,7 +84,6 @@ Component({
       }
     },
     showTime: function(e) {
-			console.log(this.data.time)
       let time = this.data.time
       if (this.data.show == 'time') {
         this.setData({

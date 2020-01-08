@@ -1,0 +1,21 @@
+<!--pages/perform/public/listitem.wxml-->
+<a class="listitemContainer">
+	<view class="imgContainer">
+	<image class="img">{{datalist}}</image>
+	<view>
+		<view class="integer">8</view>
+		<view class="decimal">.0</view>
+		<view class="text">折</view>
+	</view>
+	</view>
+    
+  <view class="">
+    <h3>aaaa</h3>
+
+    <view class="details">
+				<view class="time">2018</view>
+				<view class="position">北京</view>
+    </view>
+		<view class="priceBox"><text class="price">12</text>元起</view>
+  </view>
+</a>

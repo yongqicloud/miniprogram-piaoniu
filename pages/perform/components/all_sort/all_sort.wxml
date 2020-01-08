@@ -1,2 +1,2 @@
 <!--components/all_sort/all_sort.wxml-->
-<text>全部分类</text>
+<listitem datalist="{{datalist}}"></listitem>
