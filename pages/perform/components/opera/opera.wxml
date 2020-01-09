@@ -1,2 +1,2 @@
-<!--components/opera/opera.wxml-->
-<text>话剧歌剧</text>
+<!--components/all_sort/all_sort.wxml-->
+<listitem datalist="{{datalist}}"></listitem>

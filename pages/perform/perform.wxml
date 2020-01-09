@@ -6,12 +6,12 @@
   </view>
   <view>
     <view class="tabbar dots">
-      <a wx:for="{{dots}}" wx:key="unique" data-i='{{index}}' bindtap="changeSwiper" class="{{index==swiperCurrent?'active':''}}" >{{dots[index]}}</a>
+      <a wx:for="{{dots}}" wx:key="unique" data-i='{{index}}' bindtap="changeSwiper" class="{{index==swiperCurrent?'active':''}}">{{dots[index]}}</a>
     </view>
     <view class="pullBox">
       <view class="pullBox_top">
         <view class="good_comment {{color=='综合排序'?'colorred':'colorblack'}}" bindtap="showOrder">{{order}}</view>
-        <view class="time {{color=='全部时间'?'colorred':'colorblack'}}" bindtap="showTime">{{time}}</view>
+        <view class="during {{color=='全部时间'?'colorred':'colorblack'}}" bindtap="showTime">{{during}}</view>
       </view>
       <view class="good_comment_container zIndex10" wx:if="{{show=='comment'}}">
         <view class="{{color=='综合排序'?'colorred':'colorblack'}}" data-text="综合排序" bindtap="handleOrder">综合排序</view>
@@ -19,28 +19,39 @@
         <view class="{{color=='低价优先'?'colorred':'colorblack'}}" data-text="低价优先" bindtap="handleOrder">低价优先</view>
         <view class="{{color=='好评优先'?'colorred':'colorblack'}}" data-text="好评优先" bindtap="handleOrder">好评优先</view>
       </view>
-      <view class="time_container zIndex10" wx:elif="{{show=='time'}}">
+      <view class="time_container zIndex10" wx:elif="{{show=='during'}}">
         <view class="{{color=='全部时间'?'colorred':'colorblack'}}" data-text="全部时间" bindtap="handleTime">全部时间</view>
         <view class="{{color=='一周内'?'colorred':'colorblack'}}" data-text="一周内" bindtap="handleTime">一周内</view>
         <view class="{{color=='一月内'?'colorred':'colorblack'}}" data-text="一月内" bindtap="handleTime">一月内</view>
-        <view class="{{color=='本月末'?'colorred':'colorblack'}}" data-text="本月末" bindtap="handleTime">本月末</view>
+        <view class="{{color=='本周末'?'colorred':'colorblack'}}" data-text="本周末" bindtap="handleTime">本周末</view>
       </view>
     </view>
   </view>
   <view class="listContainer">
     <view class="{{showshadow?'list_shadow':''}}" bindtap="hiddenShadow"></view>
-    <swiper class="swiper" current="{{swiperCurrent}}" 
-      bindchange="swiperChange">
-      <swiper-item><all_sort></all_sort></swiper-item>
-      <swiper-item><vocal_concert></vocal_concert></swiper-item>
-      <swiper-item><amusement></amusement></swiper-item>
-      <swiper-item><opera></opera></swiper-item>
-      <swiper-item><exhibition></exhibition></swiper-item>
-      <swiper-item><sports_events></sports_events></swiper-item>
-      <swiper-item><concert></concert></swiper-item>
-      <swiper-item><children></children></swiper-item>
-    	<swiper-item><drama_synthesis></drama_synthesis></swiper-item>
-      <swiper-item><dance_ballad></dance_ballad></swiper-item>
+    <swiper class="swiper" current="{{swiperCurrent}}" bindchange="swiperChange">
+      <swiper-item>
+        <all_sort time="{{time}}" sort="{{sort}}"></all_sort>
+      </swiper-item>
+      <swiper-item>
+        <vocal_concert time="{{time}}" sort="{{sort}}"></vocal_concert>
+      </swiper-item>
+      <swiper-item>
+        <amusement time="{{time}}" sort="{{sort}}"></amusement>
+      </swiper-item>
+      <swiper-item>
+        <opera time="{{time}}" sort="{{sort}}"></opera>
+      </swiper-item>
+      <swiper-item>
+        <exhibition time="{{time}}" sort="{{sort}}"></exhibition>
+      </swiper-item>
+      <swiper-item>
+        <sports_events time="{{time}}" sort="{{sort}}">
+          </sports_events></swiper-item>
+      <swiper-item><concert time="{{time}}" sort="{{sort}} "></concert></swiper-item>
+      <swiper-item><children time="{{time}}"  sort="{{sort}}"></children></swiper-item>
+    	<swiper-item><drama_synthesis time="{{time}}"  sort="{{sort}}"></drama_synthesis ></swiper-item>
+      <swiper-item><dance_ballad time="{{time}}"  sort="{{sort}}"></dance_ballad></swiper-item>
     </swiper>
   </view>
 </view>

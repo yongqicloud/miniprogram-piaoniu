@@ -1,1 +1,4 @@
 /* components/all_sort/all_sort.wxss */
+.listitem{
+	overflow-y:scroll;
+}

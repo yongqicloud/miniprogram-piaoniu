@@ -1,2 +1,2 @@
-<!--components/children/children.wxml-->
-<text>儿童亲子</text>
+<!--components/all_sort/all_sort.wxml-->
+<listitem datalist="{{datalist}}"></listitem>

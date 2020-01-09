@@ -1,1 +1,4 @@
-/* components/dance_ballad/dance_ballad.wxss */
+
+.listitem{
+	overflow-y:scroll;
+}

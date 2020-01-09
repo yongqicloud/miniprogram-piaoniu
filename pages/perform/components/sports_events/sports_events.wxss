@@ -1,1 +1,5 @@
 /* components/sports_events/sports_events.wxss */
+
+.listitem{
+	overflow-y:scroll;
+}

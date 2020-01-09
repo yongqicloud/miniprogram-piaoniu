@@ -5,12 +5,13 @@ Component({
 	 */
 	properties: {
 		datalist:{
-			type:{}
+			type:Object
 		}
 	},
 	lifetimes: {
-		attached: function () {
-	console.log(this.properties.datalist.value)
+		ready: function () {
+
+			// console.log(this.properties.datalist)
 		}
 	},
 	/**
@@ -24,6 +25,6 @@ Component({
 	 * 组件的方法列表
 	 */
 	methods: {
-
+		
 	}
 })

@@ -2,6 +2,7 @@
 .performContainer{
 	display: flex;
 	flex-direction: column;
+		/* overflow-y:hidden; */
 }
 .tabbar{
 	width: 100%;
@@ -51,14 +52,8 @@
 	width:calc(50%);
 	border-right:1rpx solid #ddd;
 }
-.time{
+.during{
 	width:calc(50%);
-}
-.good_comment_container{
-	
-}
-.time_container{
-
 }
 .zIndex10{
 	width: 100%;
@@ -77,9 +72,11 @@
 .listContainer{
 	flex:1;
 	width: 100%;
-	height: 1215rpx;
+	height: 1125rpx;
 	position: relative;
+		 /* overflow-y:scroll;  */
 	/* background-color: pink; */
+	
 }
 .list_shadow{
 width: 100%;
@@ -99,11 +96,13 @@ z-index:5;
 .swiper{
 	width:100%;
 	height:100%;
-	background-color: pink; 
+	/* overflow-y:visible; */
+	/* background-color: pink;  */
 }
 .swiper swiper-item{
 	width: 100%;
 	height:100%;
+	overflow-y:visible;
 	/* background-color: yellowgreen;  */
 }
 .active{

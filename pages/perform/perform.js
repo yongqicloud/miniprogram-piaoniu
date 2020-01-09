@@ -1,4 +1,5 @@
 // pages/perform/perform.js
+const app = getApp()
 Component({
   /**
    * 组件的属性列表
@@ -14,7 +15,7 @@ Component({
 		show: '',//show==comment显示排序的下拉框，show==time显示时间的下拉框
     color: '',//color等于相应的文字，文字变红
     order: '综合排序',//控制显示在排序下拉框标题的文字
-		time: '全部时间',//控制显示在时间下拉框标题的文字
+		during: '全部时间',//控制显示在时间下拉框标题的文字
     showshadow: false,//控制遮罩层的显示
     dots: ['全部分类',
       '演唱会',
@@ -27,7 +28,9 @@ Component({
       '戏曲综艺',
       '舞蹈芭蕾'
     ],
-    swiperCurrent: 0
+    swiperCurrent: 0,
+		time:'',
+		sort:''
   },
 
   /**
@@ -39,14 +42,14 @@ Component({
     //   color,
     //   show,
     //   showshadow,
-    //   time,
+    //   during,
     //   order
     // }) {
     //   this.setData({
     //     showshadow,
     //     show,
     //     color,
-    //     time,
+    //     during,
     //     order
     //   })
     // },
@@ -84,8 +87,8 @@ Component({
       }
     },
     showTime: function(e) {
-      let time = this.data.time
-      if (this.data.show == 'time') {
+      let during = this.data.during
+      if (this.data.show == 'during') {
         this.setData({
           showshadow: fasle,
           show: "",
@@ -94,25 +97,63 @@ Component({
       } else {
         this.setData({
           showshadow: true,
-          show: "time",
-          color: time
+          show: "during",
+          color: during
         })
       }
     },
     handleTime: function(e) {
+			console.log(e.currentTarget.dataset.text)
+			let time='';
+			switch (e.currentTarget.dataset.text) {
+				case '全部时间':
+					time = '';
+					break;
+				case '一周内':
+					time = 'weekly';
+					break;
+				case '一月内':
+					time = 'monthly';
+					break;
+				case '本周末':
+					time = 'thisWeekend';
+					break;
+				default:
+					time = '';
+			}
       this.setData({
-        time: e.currentTarget.dataset.text,
+        during: e.currentTarget.dataset.text,
         color: e.currentTarget.dataset.text,
         show: "",
         showshadow: false,
+				time:time
       })
     },
     handleOrder: function(e) {
+			// console.log(e.currentTarget.dataset.text)
+			let sort='';
+			switch (e.currentTarget.dataset.text){
+				case '综合排序':
+					sort = '';
+					break;
+				case '最新优先':
+					sort = '2';
+					break;
+				case '低价优先':
+					sort = '3';
+					break;
+				case '好评优先':
+					sort = '4';
+					break;
+				default:
+					sort = '';
+			}
       this.setData({
         order: e.currentTarget.dataset.text,
         color: e.currentTarget.dataset.text,
         show: "",
         showshadow: false,
+				sort:sort
       })
     }
   }

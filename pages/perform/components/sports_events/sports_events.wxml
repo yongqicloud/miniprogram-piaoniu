@@ -1,2 +1,2 @@
-<!--components/sports_events/sports_events.wxml-->
-<text>体育赛事</text>
+<!--components/all_sort/all_sort.wxml-->
+<listitem datalist="{{datalist}}"></listitem>

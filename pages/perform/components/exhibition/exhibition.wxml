@@ -1,2 +1,2 @@
-<!--components/exhibition/exhibition.wxml-->
-<text>休闲展览</text>
+<!--components/all_sort/all_sort.wxml-->
+<listitem datalist="{{datalist}}"></listitem>

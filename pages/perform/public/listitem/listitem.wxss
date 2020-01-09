@@ -2,9 +2,62 @@
 .listitemContainer{
 	min-height: 250rpx;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	/* justify-content: center; */
+	 align-items: flex-start; 
+		padding:30rpx 30rpx 0 30rpx;
+			overflow-y:scroll;
 }
 .img{
-
+	display:block;
+	width: 150rpx;
+	height: 200rpx;
+	border:1rpx solid #999;
+}
+.message{
+	margin-left: 36rpx;
+}
+h3{
+	font-size: 30rpx;
+	color:#333;
+	max-height: 88rpx;
+	line-height: 44rpx;
+	overflow: hidden;
+}
+.details{
+	margin-top: 18rpx;
+		overflow: hidden;
+}
+.time{
+	font-size: 24rpx;
+	color:#999;
+}
+.splitline{
+	font-size: 24rpx;
+	color:#999;
+	margin:0 8rpx;
+}
+.position{
+	font-size: 24rpx;
+	color:#999;
+}
+.scoreBox{
+	font-size: 20rpx;
+	color:#999;
+	margin-top: 8rpx;
+	margin-bottom:32rpx;
+}
+.score{
+	  font-size: 24rpx;
+    font-weight: 700;
+    color: #ffb02e;
+}
+.priceBox{
+	font-size: 20rpx;
+	color:#999;
+}
+.price{
+	color:#ff2661;
+	font-size: 36rpx;
+	font-weight: 700;
+	margin-right: 8rpx;
 }
