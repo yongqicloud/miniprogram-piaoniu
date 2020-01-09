@@ -1,4 +1,9 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "type-1":"../waterfall-type/type-1/type-1",
+    "type-2":"../waterfall-type/type-2/type-2",
+    "type-3":"../waterfall-type/type-3/type-3",
+    "type-4":"../waterfall-type/type-4/type-4"
+  }
 }
