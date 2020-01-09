@@ -1,20 +1,32 @@
 <!--pages/mine/pages/allOrder/allOrder.wxml-->
 
-
 <view class="allOrdercon">
 
   <view class="navbar">
-  <!-- <view class="btn-left">
-
-  </view> -->
-    <view id="middle-wrap" bindtap="allkinds" style="color:{{fontcolor}}">
+  <view class="btn-left" bindtap="goback">
+     <text>>></text>
+  </view>
+    <view id="middle-wrap" bindtap="allkinds">
       我的订单
     </view>
   </view>
 
   <view class="detail-pop" wx:if="{{show}}">
       <view class="detail-pop__content">
-      
+       <view class="detaillist">
+        <view class="detailitem">
+           <text>全部</text>
+        </view>
+        <view class="detailitem">
+           <text>拼团订单</text>
+        </view>
+        <view class="detailitem">
+           <text>订票订单</text>
+        </view>
+        <view class="detailitem">
+           <text>球票订单</text>
+        </view>
+        </view>
       </view>
       <view class="detail-pop__close" bindtap="closetap">
       
@@ -24,29 +36,55 @@
   <view class="mainCon">
     <view class="tab">
      <view class="tabitem" bindtap="handlefrist">
-       全部
+       <view 
+        class="itemcon" 
+        style="border-bottom:{{allstate.frist?'6rpx solid red':''}}"
+        >
+         <text style="color:{{allstate.frist?active.color:''}}">全部</text>
+        </view>
      </view>
+
      <view class="tabitem" bindtap="handletwo">
-       待付款
+        <view  
+        class="itemcon" 
+         style="border-bottom:{{allstate.two?'6rpx solid red':''}}"
+        >
+        <text  style="color:{{allstate.two?active.color:''}}">待付款</text>
+        </view>
      </view>
+
      <view class="tabitem" bindtap="handlethree">
-       待发货
+        <view 
+         class="itemcon"  
+         style="border-bottom:{{allstate.three?'6rpx solid red':''}}"
+         >
+         <text  style="color:{{allstate.three?active.color:''}}">待发货</text>
+         </view>
      </view>
-     <view class="tabitem" bindtap="handlefour">
-       待收货
+     
+
+     <view class="tabitem" bindtap="handlefour" >
+       <view 
+        class="itemcon" 
+        style="border-bottom:{{allstate.four?'6rpx solid red':''}}"
+        >
+        <text style="color:{{allstate.four?active.color:''}}">待收货</text>
+        </view>
      </view>
     </view>
+
+
     <view class="listCon frist" wx:if="{{allstate.frist}}">
-       <stateDate></stateDate>
+      <stateDate></stateDate>
     </view>
-     <view class="listCon frist" wx:if="{{allstate.two}}">
-    2
+     <view class="listCon two" wx:if="{{allstate.two}}">
+      <stateDate></stateDate>
     </view>
      <view class="listCon frist" wx:if="{{allstate.three}}">
-    3
+      <stateDate></stateDate>
     </view>
      <view class="listCon frist" wx:if="{{allstate.four}}">
-    4
+      <stateDate></stateDate>
     </view>
-  </view>
+  </view> 
 </view>

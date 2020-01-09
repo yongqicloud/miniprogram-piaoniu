@@ -19,10 +19,9 @@ Component({
    */
   methods: {
      checkOrder(){
-       wx.redirectTo({
+       wx.navigateTo({
          url:'/pages/mine/minepages/allOrder/allOrder',
        })
-       console.log("1")
      }
   }
 })
