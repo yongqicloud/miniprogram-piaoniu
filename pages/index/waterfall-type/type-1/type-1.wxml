@@ -1,0 +1,16 @@
+<view class="water-item-wrap">
+  <image 
+    src="{{info.poster}}"
+    mode="widthFix"
+  ></image>
+  <view class="title">{{info.name}}</view>
+  <view class="price-wrap">
+    <view>
+      <text class="price-num-left">￥</text>
+      <text class="price-num">{{info.lowPrice}}</text>
+    </view>
+    <view class="price-icon">
+       演唱会
+    </view>
+  </view>
+</view>

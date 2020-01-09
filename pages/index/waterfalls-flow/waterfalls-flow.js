@@ -12,6 +12,7 @@ Component({
    * 组件的初始数据
    */
   data: {
+    currentData:0,
     activeClass: '全部',
     name_list: [{
       title:'全部'
@@ -21,7 +22,8 @@ Component({
     },
     {
       title:'境外热卖'
-    }]
+    }],
+    list:[]
   },
 
   /**
@@ -29,15 +31,20 @@ Component({
    */
   methods: {
     checkoutNav(e) {
-      let { title } = e.currentTarget.dataset
+      let { title ,index} = e.currentTarget.dataset
       this.setData({
         activeClass: title,
+        currentData:index
+      })
+    },
+    handleIndexChange(e){
+      console.log(e)
+      this.setData({
+        currentData:e.detail.current
       })
     }
   },
   lifetimes: {
-    attached() {
-
-    }
+    
   }
 })

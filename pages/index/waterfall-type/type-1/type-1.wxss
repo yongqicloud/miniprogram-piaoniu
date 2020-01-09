@@ -1,0 +1,38 @@
+.water-item-wrap{
+  width: 100%;
+   margin-bottom: 20rpx;
+   border-radius: 20rpx;
+   overflow: hidden;
+}
+.water-item-wrap image{
+  width: 100%;
+}
+.water-item-wrap .title{
+  padding: 30rpx 10rpx;
+  font-size: 24rpx;
+
+}
+.water-item-wrap  .price-wrap{
+  display: flex;
+  justify-content: space-between;
+
+}
+.price-wrap{
+  padding: 0 10rpx;
+}
+.price-num-left{
+  color: lightcoral;
+  font-size: 24rpx;
+  font-weight: 600;
+}
+.price-num{
+  color: lightcoral;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.price-icon{
+  border: solid 1rpx #ccc;
+  color: #ccc;
+  font-size: 24rpx;
+  transform: scale(0.7)
+}

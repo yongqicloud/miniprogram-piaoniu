@@ -1,0 +1,31 @@
+<view class="water-item-wrap">
+  <image 
+    src="{{info.poster}}"
+    mode="widthFix"
+  ></image>
+  <view 
+    class="cover-view"
+    style="background:{{info.color}}"
+  >
+    <view 
+      class="bg-cover"
+      style="background: linear-gradient(-180deg,transparent, {{info.color}} 100%);"
+    >
+      <view class="yellow">{{info.tag}}</view>
+    </view>
+    <view class="set-padding">
+      <view class="bangdan-title">{{info.name}}</view>
+      <view class="sub-title">VOL4</view> 
+    </view>
+    <view
+      class="bottom-shadow"
+      style="background:{{info.color}}"
+    >
+      <view 
+        class="bottom-shadow bottom-shadow-2"
+        style="background:{{info.color}}"
+      ></view>
+    </view>
+  </view>
+  <view class="space"></view>
+</view>
