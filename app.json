@@ -1,9 +1,9 @@
 {
   "pages": [
-    "pages/mine/mine",
     "pages/index/index",
-		"pages/perform/perform",
+    "pages/perform/perform",
     "pages/find/find",
+    "pages/mine/mine",
     "pages/mine/minepages/allOrder/allOrder"
   ],
   "window": {

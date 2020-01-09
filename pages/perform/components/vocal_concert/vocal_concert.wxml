@@ -1,2 +1,2 @@
-<!--components/vocal_concert/vocal_concert.wxml-->
-<text>演唱会</text>
+<!--components/all_sort/all_sort.wxml-->
+<listitem datalist="{{datalist}}"></listitem>

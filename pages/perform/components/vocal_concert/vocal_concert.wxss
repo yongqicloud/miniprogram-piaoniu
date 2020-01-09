@@ -1,1 +1,4 @@
-/* components/vocal_concert/vocal_concert.wxss */
+
+.listitem{
+	overflow-y:scroll;
+}

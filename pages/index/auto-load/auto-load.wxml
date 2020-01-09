@@ -1,0 +1,28 @@
+<scroll-view scroll-y style="width:100%;height:1200rpx;">
+  <view class="auto-load-body">
+    <view class="scroll-left">
+      <view 
+        class="loop-item"
+        wx:for="{{left_list}}"
+        wx:key="*this"
+      >
+        <type-1 wx:if="{{item.type === 1}}" info="{{item.data}}"/>
+        <type-2 wx:elif="{{item.type === 2}}" info="{{item.data}}"/>
+        <type-3 wx:elif="{{item.type === 3}}" info="{{item.data}}"/>
+        <type-4 wx:elif="{{item.type === 4}}" info="{{item.data}}"/>
+      </view>
+    </view>
+    <view class="scroll-right">
+      <view 
+        class="loop-item"
+        wx:for="{{right_list}}"
+        wx:key="*this"
+      >
+        <type-1 wx:if="{{item.type === 1}}" info="{{item.data}}"/>
+        <type-2 wx:elif="{{item.type === 2}}" info="{{item.data}}"/>
+        <type-3 wx:elif="{{item.type === 3}}" info="{{item.data}}"/>
+        <type-4 wx:elif="{{item.type === 4}}" info="{{item.data}}"/>
+      </view>
+    </view>
+  </view>
+</scroll-view>

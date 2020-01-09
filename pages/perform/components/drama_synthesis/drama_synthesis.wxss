@@ -1,1 +1,4 @@
-/* components/drama_synthesis/drama_synthesis.wxss */
+
+.listitem{
+	overflow-y:scroll;
+}

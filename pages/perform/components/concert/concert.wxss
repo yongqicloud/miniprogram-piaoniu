@@ -1,1 +1,4 @@
-/* components/concert/concert.wxss */
+
+.listitem{
+	overflow-y:scroll;
+}

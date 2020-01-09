@@ -1,0 +1,22 @@
+<view class="type-4-wrap">
+  
+  <view 
+    class="bg-image"
+    style="background:url({{info.content.video ? info.content.video.poster : info.content.image.thumbnail}})"
+  >
+    <view class="yellow">{{info.tag}}</view>
+    <view class="video-play">
+      <view class="cube"></view>
+    </view>
+  </view>
+  <view class="info-wrap">
+    <view class="title">{{info.content.content}}</view>
+    <view class="user">
+      <view 
+        class="avatar"
+        style="background:url({{info.content.user.avatar}}')"
+      ></view>
+      <view class="name">{{info.content.user.userName}}</view>
+    </view>
+  </view>
+</view>

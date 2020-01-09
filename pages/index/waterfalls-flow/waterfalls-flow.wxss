@@ -1,4 +1,10 @@
 /* pages/index/waterfalls-flow/waterfalls-flow.wxss */
+.waterfall-flow{
+  /* padding: 0 40rpx; */
+}
+.waterfall-flow .nav{
+  padding-bottom:  20rpx;
+}
 .waterfall-flow .title{
   box-sizing: border-box;
   width: 100%;
@@ -8,13 +14,18 @@
   display: flex;
   align-items: center;
   border-bottom: 1rpx solid blue;
+  background: #fff;
 }
-.nav{
+.waterfall-flow scroll-view{
+  width: 100%;
+  background: #fff;
+}
+.waterfall-flow .nav{
   display: flex;
   width: max-content;
   background: #fff;
 }
-.nav-item{
+.waterfall-flow .nav-item{
   box-sizing: border-box;
   width: 20vw;
   padding:20rpx 0;
@@ -23,13 +34,13 @@
   justify-content: center;
   align-items: center;
 }
-.nav-item.active{
+.waterfall-flow .nav-item.active{
   font-size: 30rpx;
   font-weight: 700;
   color: #000;
   position: relative;
 }
-.nav-item.active::after{
+.waterfall-flow .nav-item.active::after{
   box-sizing: border-box;
   content: '';
   width:30%;
@@ -41,10 +52,24 @@
   margin: auto;
   border-bottom: 4rpx solid salmon;
 }
-.title{
+.waterfall-flow .title{
   font-size: 40rpx;
   padding: 20rpx 40rpx;
 }
-.nav-item{
+.waterfall-flow .nav-item{
   font-size: 24rpx;
+}
+
+/*  瀑布流主体 */
+.waterfalls-scroll-body-wrap{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 40rpx;
+}
+.waterfalls-scroll-body{
+  display: flex;
+}
+.waterfalls-scroll-body .swiper_con{
+  width: 100%;
+  height: auto;
 }

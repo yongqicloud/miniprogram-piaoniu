@@ -1,1 +1,4 @@
-/* components/amusement/amusement.wxss */
+
+.listitem{
+	overflow-y:scroll;
+}

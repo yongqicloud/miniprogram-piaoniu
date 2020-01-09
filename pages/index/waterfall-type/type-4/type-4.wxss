@@ -1,0 +1,87 @@
+.type-4-wrap{
+  width: 100%;
+  height:520rpx;
+  background: lavenderblush;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rpx;
+  border-radius: 20rpx; 
+   overflow: hidden;
+}
+.type-4-wrap image{
+  /* height: 60%; */
+}
+.bg-image{
+  width: 100%;
+  height: 60%;
+  background: url('https://img.piaoniu.com/video/ce046799c1e0e2506838c33134714248b385a919.jpg') no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.video-play{
+  box-sizing:border-box;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 2rpx solid #fff;
+  height: 60rpx;
+  width: 60rpx;
+}
+.cube{
+  width: 0rpx;
+  height: 0rpx;
+  border: 18rpx solid #fff;
+  border-color: transparent transparent transparent #fff;
+  position: absolute;
+  left: 40%;
+  top: 15%;
+}
+.yellow{
+  position: absolute;
+  left: 10rpx;
+  bottom: 0;
+  background: yellow;
+  border-radius: 5rpx;
+  padding: 4rpx;
+  font-size: 24rpx;
+  transform: translateY(50%);
+}
+.info-wrap{
+  flex: 1;
+  background: #333;
+  color: #fff;
+}
+.title{
+  color: #fff;
+  font-size: 24rpx;
+  line-height: 1.3;
+  padding: 0rpx 10rpx;
+  margin: 40rpx 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow : hidden;
+}
+.user{
+  display: flex;
+  align-items: center;
+  padding: 0 10rpx;
+}
+.avatar{
+  box-sizing: border-box;
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  background: hotpink;
+  background: url("https://img.piaoniu.com/user/3056220/avatar/1566423341034.jpg/d3179cfc8d684a49cb988aa5cd9d01f893c43a1f.jpg") no-repeat;
+  background-size: contain;
+  border: 1rpx solid #fff;
+}
+.name{
+  padding-left: 10rpx;
+  color: #Fff;
+  font-size: 24rpx;
+}

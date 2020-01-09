@@ -1,2 +1,2 @@
-<!--components/drama_synthesis/drama_synthesis.wxml-->
-<text>戏曲综艺</text>
+<!--components/all_sort/all_sort.wxml-->
+<listitem datalist="{{datalist}}"></listitem>
