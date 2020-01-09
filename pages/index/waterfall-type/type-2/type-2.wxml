@@ -1,19 +1,31 @@
 <view class="water-item-wrap">
   <image 
-    src="https://img.piaoniu.com/misc/e4b1d7b0695f58238d89cc0c6f87982ffa911831.png"
+    src="{{info.poster}}"
     mode="widthFix"
   ></image>
-  <view class="cover-view">
-    <view class="bg-cover">
-      <text>榜单推荐</text>
+  <view 
+    class="cover-view"
+    style="background:{{info.color}}"
+  >
+    <view 
+      class="bg-cover"
+      style="background: linear-gradient(-180deg,transparent, {{info.color}} 100%);"
+    >
+      <view class="yellow">{{info.tag}}</view>
     </view>
-    <view class="bangdan-title">票牛热卖榜单</view>
-    <view class="sub-title">VOL4</view>
-    <view class="bottom-shadow">
-      <view class="bottom-shadow bottom-shadow-2"></view>
+    <view class="set-padding">
+      <view class="bangdan-title">{{info.name}}</view>
+      <view class="sub-title">VOL4</view> 
+    </view>
+    <view
+      class="bottom-shadow"
+      style="background:{{info.color}}"
+    >
+      <view 
+        class="bottom-shadow bottom-shadow-2"
+        style="background:{{info.color}}"
+      ></view>
     </view>
   </view>
   <view class="space"></view>
-  
-  
 </view>

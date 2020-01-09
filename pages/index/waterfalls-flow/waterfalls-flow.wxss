@@ -2,6 +2,9 @@
 .waterfall-flow{
   /* padding: 0 40rpx; */
 }
+.waterfall-flow .nav{
+  padding-bottom:  20rpx;
+}
 .waterfall-flow .title{
   box-sizing: border-box;
   width: 100%;
@@ -11,6 +14,7 @@
   display: flex;
   align-items: center;
   border-bottom: 1rpx solid blue;
+  background: #fff;
 }
 .waterfall-flow scroll-view{
   width: 100%;
@@ -65,7 +69,7 @@
 .waterfalls-scroll-body{
   display: flex;
 }
-.scroll-left, .scroll-right{
-  width: 50%;
-  height: 300px;
+.waterfalls-scroll-body .swiper_con{
+  width: 100%;
+  height: auto;
 }

@@ -1,0 +1,14 @@
+.auto-load-body{
+  width: 100%;
+  display: flex;
+}
+.scroll-left, .scroll-right{
+  width: 50%;
+  box-sizing: border-box;
+}
+.scroll-left{
+  padding-right: 10rpx;
+}
+.scroll-right{
+  padding-left: 10rpx;
+}

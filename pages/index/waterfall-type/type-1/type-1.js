@@ -4,7 +4,7 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    info:Object
   },
 
   /**
@@ -14,10 +14,13 @@ Component({
 
   },
 
-  /**
+  /**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
    * 组件的方法列表
    */
   methods: {
 
+  },
+  lifetimes:{
+    
   }
 })

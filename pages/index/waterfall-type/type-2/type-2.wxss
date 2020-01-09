@@ -3,6 +3,10 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  height: max-content;
+  margin-bottom: 20rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
 }
 .water-item-wrap image{
   width: 100%;
@@ -19,15 +23,20 @@
   position: absolute;
   width: 100%;
   height: 50rpx;
-  background: linear-gradient(pink,hotpink);
-  
+  /* background-image: linear-gradient(-180deg, rgba(240, 140, 182, 0) 0, rgb(238, 115, 191) 100%); */
   left: 0;
   top:-50rpx;
 }
-.water-item-wrap .cover-view .bg-cover text{
+.water-item-wrap .cover-view .bg-cover .yellow{
+  box-sizing: border-box;
   background: yellow;
-  color: #999;
-  line-height: 1.2
+  color: #444;
+  border-radius: 5rpx;
+  padding: 4rpx;
+  font-size: 24rpx;
+  position: absolute;
+  left: 30rpx;
+  top: 10rpx;
 }
 .bangdan-title{
   padding: 10rpx 0;
@@ -39,13 +48,16 @@
   font-size: 24rpx;
   color: #f5f5f5
 }
+
+.set-padding{
+  padding: 0 20rpx;
+}
 .bottom-shadow{
   position: absolute;
   width: 90%;
   height: 30rpx;
   left: 5%;
   bottom: -10rpx;
-  background: hotpink;
   border-radius: 10rpx;
   opacity: 0.7;
 }

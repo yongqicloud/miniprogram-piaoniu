@@ -1,5 +1,8 @@
 .water-item-wrap{
   width: 100%;
+   margin-bottom: 20rpx;
+   border-radius: 20rpx;
+   overflow: hidden;
 }
 .water-item-wrap image{
   width: 100%;

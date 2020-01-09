@@ -1,2 +1,13 @@
-<!--pages/index/waterfall-type/type-3/type-3.wxml-->
-<text>pages/index/waterfall-type/type-3/type-3.wxml</text>
+<view class="type-3-wrap">
+  <view class="header">
+    <view class="main-title">热搜榜</view>
+    <view class="title">{{info.title}}</view>
+  </view>
+  <view class="rec-body">
+    <view 
+      class="rec-item"
+      wx:for="{{info.items}}"
+      wx:key="*this"
+    >{{item.name}}</view>
+  </view>
+</view>

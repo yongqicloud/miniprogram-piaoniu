@@ -8,32 +8,59 @@
       <view
         wx:for="{{name_list}}"
         wx:key="*this"
-        class="nav-item {{activeClass === item.title ? 'active' : ''}}"
-        bindtap="ch0eckoutNav"
-        data-tit000le="{{item.title}}"
+        class="nav-item {{currentData === index ? 'active' : ''}}"
+        bindtap="checkoutNav"
+        data-index="{{index}}"
+        data-title="{{item.title}}"
       >{{item.title}}</view>
     </view>
   </scroll-view>
   <scroll-view class="waterfalls-scroll-body-wrap">
     <view class="waterfalls-scroll-body">
 
-      <view class="scroll-left">
-        <!-- <view 
-          class="item"
-          wx:for="{{left_list}}"
-          wx:key="*this"
-        >
-        </view> -->
-        <type-1 />
-      </view>
-      <view class="scroll-right">
-        <!-- <view 
-          class="item"
-          wx:for="{{right_list}}"
-          wx:key="*this"
-        ></view> -->
-        <type-2 />
-      </view>
+      <swiper current="{{currentData}}" class='swiper' style="height:600px;width:100%" duration="300" bindchange="handleIndexChange">
+        <swiper-item>
+          <view class='swiper_con'>
+            <auto-load />
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view class='swiper_con'>
+            <auto-load />
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <view class='swiper_con'>
+            <auto-load />
+          </view>
+        </swiper-item>
+      </swiper>
+      
     </view>
   </scroll-view>
 </view>
+
+<!-- <view class="scroll-left">
+  <view 
+    class="loop-item"
+    wx:for="{{left_list}}"
+    wx:key="*this"
+  >
+    <type-1 wx:if="{{item.type === 1}}" info="{{item.data}}"/>
+    <type-2 wx:elif="{{item.type === 2}}" info="{{item.data}}"/>
+    <type-3 wx:elif="{{item.type === 3}}" info="{{item.data}}"/>
+    <type-4 wx:elif="{{item.type === 4}}" info="{{item.data}}"/>
+  </view>
+</view>
+<view class="scroll-right">
+  <view 
+    class="loop-item"
+    wx:for="{{right_list}}"
+    wx:key="*this"
+  >
+    <type-1 wx:if="{{item.type === 1}}" info="{{item.data}}"/>
+    <type-2 wx:elif="{{item.type === 2}}" info="{{item.data}}"/>
+    <type-3 wx:elif="{{item.type === 3}}" info="{{item.data}}"/>
+    <type-4 wx:elif="{{item.type === 4}}" info="{{item.data}}"/>
+  </view>
+</view> -->

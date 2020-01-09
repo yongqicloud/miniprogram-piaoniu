@@ -1,1 +1,45 @@
-/* pages/index/waterfall-type/type-3/type-3.wxss */
+.type-3-wrap{
+  width: 100%;
+  height:520rpx;
+  background: hotpink;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rpx;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.header{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 40rpx 30rpx;
+}
+.header .main-title{
+  box-sizing: border-box;
+  font-size: 36rpx;
+  color: #fff;
+  padding: 10rpx;
+}
+.header .title{
+  box-sizing: border-box;
+  font-size: 24rpx;
+  color: #fff;
+}
+/* 主体 */
+.rec-body{
+  box-sizing: border-box;
+  /* padding:0 10rpx; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.rec-item{
+  height: 70rpx;  
+  width: 42%;
+  border-radius: 80rpx;
+  background: #FF8DAC;
+  margin-bottom: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}

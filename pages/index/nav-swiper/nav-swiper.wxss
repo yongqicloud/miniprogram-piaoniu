@@ -47,7 +47,7 @@
   width: 100%;
   /* height: 420rpx; */
   padding-top: 40rpx;
-  background: lavender;
+  background: #fff;
 
 }
 
@@ -68,7 +68,7 @@
   width: 100%
 }
 .ticket-item navigator image{
-  display: block;
+  display: block;/
   width: 100%;
   height: 274rpx;
 }
@@ -76,6 +76,7 @@
   width: 100%;
   padding-top:20rpx;
   line-height: 32rpx;
+  height: 64rpx;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
