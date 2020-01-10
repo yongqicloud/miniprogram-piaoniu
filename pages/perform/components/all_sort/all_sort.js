@@ -28,11 +28,11 @@ Component({
 	},
 	observers: {
 		'time,sort': function (time, sort) {
-			console.log('改变了'+time)
+			// console.log('改变了'+time)
 			get({
 				url:  'https://m.piaoniu.com/api/v3/activities?pageIndex=1&categoryId=1&sort='+this.data.sort+'&seatMap=false&highestPrice=&lowestPrice=&time='+this.data.time
 			}).then((res) => {
-				 console.log(res)
+				//  console.log(res)
 				this.setData({
 					datalist: res.data.data
 				}, () => {
@@ -52,7 +52,7 @@ Component({
 				}).then((res)=>{
 					//  console.log(res)
 					this.setData({
-						datalist:res.data.data
+						datalist:res.data.data,
 					},()=>{
 						// console.log(this.data.datalist)
 					})

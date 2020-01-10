@@ -29,7 +29,7 @@
   </view>
   <view class="listContainer">
     <view class="{{showshadow?'list_shadow':''}}" bindtap="hiddenShadow"></view>
-    <swiper class="swiper" current="{{swiperCurrent}}" bindchange="swiperChange">
+    <swiper class="swiper" current="{{swiperCurrent}}"   bindchange="swiperChange">
       <swiper-item>
         <all_sort time="{{time}}" sort="{{sort}}"></all_sort>
       </swiper-item>

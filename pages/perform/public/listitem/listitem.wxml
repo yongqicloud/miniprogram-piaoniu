@@ -1,7 +1,8 @@
 <!--pages/perform/public/listitem.wxml-->
-<a wx:if="{{datalist.length>0}}" class="listitemContainer" wx:for="{{datalist}}" wx:key="index">
+<view class="listitemContainer"wx:if="{{datalist.length>0}}" wx:for="{{datalist}}"   wx:key="index" >
+<navigator wx:if="{{item.id}}"  url="/pages/perform/activitypage/activitypage?id={{item.id}}&img={{item.poster}}&time={{item.timeRange}}&position={{item.venueName}}&score={{item.rank}}&price={{item.lowPrice}}&title={{item.properName}}">
   <view class="imgContainer">
-    <image class="img" src="{{item.poster}}"></image>
+    <image class="img" src="{{item.poster}}"  ></image>
     <view>
       <!-- <view class="integer">8</view>
 		<view class="decimal">.0</view>
@@ -19,6 +20,8 @@
     </view>
 		<view class="scoreBox"> {{item.rank?'评分 ':'暂无评分'}}<span class="score"> {{item.rank?item.rank:''}}</span></view>
     <view class="priceBox">
-      <text class="price">{{item.lowPrice}}</text>元起</view>
+      <text class="price" wx:if="{{item.lowPrice}}">{{item.lowPrice}}</text>{{item.lowPrice?'元起':'暂时缺票'}}</view>
   </view>
-</a>
+</navigator>
+
+</view>
