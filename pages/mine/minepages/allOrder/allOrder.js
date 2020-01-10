@@ -1,4 +1,5 @@
   // pages/mine/pages/allOrder/allOrder.js
+
 Component({
   /**
    * 组件的属性列表
@@ -21,30 +22,50 @@ Component({
       active:{
        color: "red",
        fotnSize:"32rpx"
-      }
+      },
+      id:"0"
   },
-  pageLifetimes:{
-    onLoad:function () {
-      console.log(this.is)
-    }
-  },
+  
   lifetimes: {
-    attached: function () {
-       console.log(this.is)
-    },
-    ready:function(options){
-        console.log(options)
-    },
-    detached: function () {
-      // 在组件实例被从页面节点树移除时执行
-    },
-
-    onShow() {
-      /*
-        需要在mounted之后调用也就是wx中onLoad之后
-         */
-      this.query = this.$root.$mp.query
-      console.log(this.query)
+    ready: function () {
+      let pages = getCurrentPages();
+      let type = pages[1].options.type
+      let id = pages[1].options.id
+      this.setData({
+        id
+      })
+      switch(type){
+        case "one":
+          this.setData({
+            allstate: {
+              frist: false,
+              two: true,
+              three: false,
+              four: false
+            }
+          }) 
+        break;
+        case "two":
+          this.setData({
+            allstate: {
+              frist: false,
+              two: false,
+              three: true,
+              four: false
+            }
+          })
+        break;
+        case "three":
+          this.setData({
+            allstate: {
+              frist: false,
+              two: false,
+              three: false,
+              four: true
+            }
+          })
+        break;
+      }
     },
   },
   /**
@@ -52,12 +73,7 @@ Component({
    */
   methods: {
     allkinds(){
-      // var query = wx.createSelectorQuery();
-      // let a = query.select(".detail-pop").fields({computedStyle: ['margin', 'fontSize']},(res) => {
-      //   res.fontSize
-      // }).exec()
-     
-      this.setData({
+        this.setData({
         show:true,
         fontcolor:"#000"
     })
@@ -70,6 +86,7 @@ Component({
    },
    handlefrist(){
      this.setData({
+       id:"0",
        allstate: {
          frist: true,
          two: false,
@@ -80,6 +97,7 @@ Component({
    },
     handletwo() {
       this.setData({
+        id: "1",
         allstate: {
           frist: false,
           two: true,
@@ -90,6 +108,7 @@ Component({
     },
     handlethree() {
       this.setData({
+        id: "2",
         allstate: {
           frist: false,
           two: false,
@@ -103,6 +122,7 @@ Component({
     },
     handlefour() {
       this.setData({
+        id:"3",
         allstate: {
           frist: false,
           two: false,

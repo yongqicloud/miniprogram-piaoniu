@@ -74,17 +74,17 @@
     </view>
 
 
-    <view class="listCon frist" wx:if="{{allstate.frist}}">
-      <stateDate></stateDate>
+    <view class="listCon frist" >
+      <stateDate propA="{{id}}"></stateDate>
     </view>
-     <view class="listCon two" wx:if="{{allstate.two}}">
-      <stateDate></stateDate>
+     <!-- <view class="listCon two" wx:if="{{allstate.two}}">
+      <stateDate propA="{{id}}"></stateDate>
     </view>
      <view class="listCon frist" wx:if="{{allstate.three}}">
-      <stateDate></stateDate>
+      <stateDate propA="{{id}}"></stateDate>
     </view>
      <view class="listCon frist" wx:if="{{allstate.four}}">
-      <stateDate></stateDate>
-    </view>
+      <stateDate propA="{{id}}"></stateDate> 
+    </view>-->
   </view> 
 </view>

@@ -1,0 +1,6 @@
+<!--pages/mine/minepages/ticketing/ticketing.wxml-->
+<view>
+  <session></session>
+  <price  bindmyevent="onMyEvent"></price>
+  <accounts price="{{price}}"></accounts>
+</view>

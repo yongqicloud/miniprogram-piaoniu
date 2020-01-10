@@ -1,16 +1,16 @@
 <!--pages/mine/allState/allState.wxml-->
 <view class="allStateCon">
    <view class="allStateitem">
-     <view class="icon-topay" bindtap="handlefrist">
+     <view class="icon-topay" bindtap="handletap" data-type="one" data-id="1">
      </view>
      待付款
    </view>
-    <view class="allStateitem" bindtap="handletwo">
+    <view class="allStateitem" bindtap="handletap" data-type="two" data-id="2">
     <view class="second">
      </view>
     待发货
    </view>
-    <view class="allStateitem" bindtap="handlethree">
+    <view class="allStateitem" bindtap="handletap" data-type="three" data-id="3">
      <view class="three">
      </view>
      待收货

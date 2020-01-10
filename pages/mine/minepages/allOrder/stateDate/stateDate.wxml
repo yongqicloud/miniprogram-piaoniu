@@ -4,11 +4,13 @@
  <view wx:for="{{orderlist}}" wx:key="*this">
   {{item.recommendContent.properName}}
  </view>
+
 </view>
 
 <view wx:else class="nodata">
-          <cover-image src="https://static.piaoniu.com/m/static/img/empty-face.36b9396.png"></cover-image>
-          <view class="tiptext">暂无此类订单</view>
+          <!-- <cover-image src="https://static.piaoniu.com/m/static/img/empty-face.36b9396.png"></cover-image>
+          <view class="tiptext">暂无此类订单</view> -->
+           {{propA}}
  </view>
 
 </view>

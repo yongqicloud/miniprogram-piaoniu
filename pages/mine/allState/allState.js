@@ -18,10 +18,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    handlefrist(){
-      let type = this.data.type
+    handletap(e){
+      let type = e.currentTarget.dataset.type
+      let  id =e.currentTarget.dataset.id
       wx.navigateTo({
-        url: '/pages/mine/minepages/allOrder/allOrder?type=aaa',
+        url: '/pages/mine/minepages/allOrder/allOrder?type=' + type + "&id="+id,
       })
     }
   }

@@ -1,0 +1,16 @@
+<!--pages/mine/minepages/ticketing/accounts/accounts.wxml-->
+<view class="accountsCon">
+  <view class="num">
+    <view class="txt">数量</view>
+    <view class="numlist">
+      <view class="numitem">
+        <view class="item options" data-id="add" bindtap="handleop">+</view>
+        <view class="item">{{num}}</view>
+        <view class="item options" data-id="red" bindtap="handleop">-</view>
+      </view>
+    </view>
+  </view>
+  <view class="total">
+  {{totalprice}}
+  </view>
+</view>

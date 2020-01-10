@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "session":"./session/session",
+    "price":"./price/price",
+    "accounts":"./accounts/accounts"
+  }
+}
