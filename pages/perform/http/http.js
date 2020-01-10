@@ -1,11 +1,11 @@
-export const get = ({ url }) => {
+export const get = ({ url, contentType}) => {
 	return new Promise((resolve)=>{
 		wx.request({
 			url,
 			method: 'get',
 			dataType: 'json',
 			header: {
-				'content-type': 'application/x-www-form-urlencoded'
+				'content-type': contentType ? contentType:'application/x-www-form-urlencoded'
 			},
 			success: (res) => {
 				// console.log(res)

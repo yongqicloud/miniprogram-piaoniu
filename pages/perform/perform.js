@@ -103,7 +103,7 @@ Component({
       }
     },
     handleTime: function(e) {
-			console.log(e.currentTarget.dataset.text)
+			// console.log(e.currentTarget.dataset.text)
 			let time='';
 			switch (e.currentTarget.dataset.text) {
 				case '全部时间':

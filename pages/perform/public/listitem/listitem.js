@@ -6,6 +6,9 @@ Component({
 	properties: {
 		datalist:{
 			type:Object
+		},
+		id:{
+			type:String
 		}
 	},
 	lifetimes: {
@@ -25,6 +28,9 @@ Component({
 	 * 组件的方法列表
 	 */
 	methods: {
-		
+		jumppage:function(){
+			console.log(this.properties.id.value ,0)
+			// wx: navigateTo({ url: "pages/perform/activityPage/activitypage?"+this.properties.id.value }) 
+		}
 	}
 })
