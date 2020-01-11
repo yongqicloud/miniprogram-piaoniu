@@ -52,3 +52,40 @@ accounts{
   color:#fff;
   font-size:40rpx;
 }
+.total{
+  width:100%;
+  height:112rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pricebox{
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pricetxt{
+  height:34rpx;
+  line-height:34rpx;
+  padding:0 20rpx;
+}
+.totalprice{
+  height:112rpx;
+  line-height:112rpx;
+  color: #ff2661;
+  font-size: 40rpx;
+  flex:1;
+}
+.sign{
+  font-size:24rpx;
+   color: #ff2661;
+}
+.totalnum{
+  width:200rpx;
+  height:112rpx;
+  color: #fff;
+  text-align: center;
+  background-color: #ff2661;
+  line-height: 112rpx;
+}

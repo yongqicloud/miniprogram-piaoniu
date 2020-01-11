@@ -1,0 +1,27 @@
+<!--pages/mine/minepages/order/order.wxml-->
+<view class="good-card-wrap">
+   <view class="cardleft">
+      <view class="card-main__name">
+         {{orderdata.properName}}
+      </view>
+      <view class="time">
+         {{orderdata.time}}
+      </view>
+      <view class="address">
+        {{orderdata.address}}
+      </view>
+   </view>
+   <view class="cardright">
+   <image src="{{orderdata.poster}}"></image>
+   </view>
+</view>
+
+<view class="submit-bar">
+  <view class="info">
+    <view class="price">{{orderdata.price}}</view>
+    <view class="txt">元</view>
+  </view>
+  <view class="btn">
+    确认下单
+  </view>
+</view>

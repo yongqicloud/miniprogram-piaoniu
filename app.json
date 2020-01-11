@@ -1,5 +1,7 @@
 {
 	"pages": [
+    "pages/mine/minepages/ticketing/ticketing",
+    "pages/mine/minepages/order/order",
 		"pages/index/index",
 		"pages/find/find",
 		"pages/mine/mine",

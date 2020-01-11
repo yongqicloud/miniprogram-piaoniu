@@ -11,6 +11,12 @@
     </view>
   </view>
   <view class="total">
-  {{totalprice}}
+    <view class="pricebox">
+      <view class="pricetxt">合计：</view>
+      <view class="totalprice">
+         <text class="sign">￥</text>{{totalprice}}
+      </view>
+    </view>
+    <view class="totalnum" bindtap="handleaccount">结算（{{num}}）</view>
   </view>
 </view>

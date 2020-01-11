@@ -11,7 +11,8 @@ Component({
   data: {
     pricelist:[],
     price:819,
-    activestyle:'',
+    selectedindex:0,
+    activestyle: "active"
   },
   lifetimes:{
     attached: function () {
@@ -37,10 +38,11 @@ Component({
    */
   methods: {
     handlechoose(e){
+      let index = e.currentTarget.dataset.index
       let price = e.currentTarget.dataset.price
       this.triggerEvent('myevent',price)
       this.setData({
-        activestyle:"active"
+        selectedindex:index
       })
     }
   }

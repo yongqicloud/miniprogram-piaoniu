@@ -1,7 +1,7 @@
 <!--pages/mine/minepages/ticketing/session/session.wxml-->
 <view class="session">
   <view class="title">选择场次</view>
-  <view wx:for="{{session.events}}"class="sessionitem">
+  <view wx:for="{{session.events}}" wx:key="*this" class="sessionitem">
     <view class="itemcon">
        {{item.specification}}
     </view>

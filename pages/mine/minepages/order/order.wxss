@@ -1,0 +1,93 @@
+page{
+  background-color: #f2f2f2;
+  width:100%;
+  height:100%;
+  /* margin-bottom: 90px; */
+  position: relative;
+}
+.good-card-wrap{
+  width: calc(100% - 32rpx);
+  height:346rpx;
+  margin:20rpx 16rpx;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  background:#fff;
+}
+.cardleft{
+  flex:1;
+  height:224rpx;
+}
+image{
+  width:100%;
+  height:108rpx;
+}
+.card-main__name{
+  width:100%;
+  height:40rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.time{
+    width:100%;
+  height:28rpx;
+  margin-top:20rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.address{
+  width:100%;
+  height:28rpx;
+  margin-top:20rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+.cardright{
+  width:80rpx;
+  height:224rpx;
+}
+.submit-bar{
+  width:100%;
+  height:98rpx;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  position: absolute;
+  left:0;
+  bottom:0;
+}
+.info{
+  flex:1;
+  height:100%;
+  padding:0 26rpx 0 30rpx;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background: #fff;
+  padding-bottom: 10rpx;
+}
+.price{
+  padding:0 10rpx;
+  color: #ff2661;
+  font-size: 40rpx;
+  font-weight: bold;
+  height:46rpx;
+  text-align: center;
+  line-height:46rpx;
+}
+.txt{
+    font-size: 20rpx;
+    color: #999;
+    margin: 0 2px;
+    height: 22rpx;
+}
+.btn{
+  width:304rpx;
+  height:100%;
+  line-height:98rpx;
+  text-align:center;
+  background:#ff2661;
+  font-size:34rpx;
+  color:#fff;
+}

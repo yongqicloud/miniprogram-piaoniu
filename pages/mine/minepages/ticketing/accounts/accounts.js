@@ -1,4 +1,4 @@
-// pages/mine/minepages/ticketing/accounts/accounts.js
+  // pages/mine/minepages/ticketing/accounts/accounts.js
 Component({
   /**
    * 组件的属性列表
@@ -15,7 +15,8 @@ Component({
    */
   data: {
     num:1,
-    totalprice:0
+    totalprice:0,
+    dealaccount:{}
   },
   observers: {
     'price': function (price) {
@@ -25,13 +26,30 @@ Component({
       })
     }
   },
-  // lifetimes:{
-  //   attached:function () {
-  //     this.setData({
-  //       totalprice: (this.data.num) * (this.data.price)
-  //     })
-  //   }
-  // },
+  lifetimes:{
+    attached: function () {
+      wx.request({
+        url: 'https://m.piaoniu.com/api/v3/activities/131693?b2c=true&areaTicketType=2&supportSpeedPackBuy=true', //仅为示例，并非真实的接口地址
+        data: {
+          x: '',
+          y: ''
+        },
+        header: {
+          'content-type': 'application/json' // 默认值
+        },
+        success: (res) => {
+          this.setData({
+            dealaccount: {
+              poster:res.data.poster,
+              properName: res.data.properName,
+              time: res.data.timeRange,
+              address: res.data.venue.name
+            }
+          })
+        }
+      })
+    }
+  },
   /**
    * 组件的方法列表
    */
@@ -56,5 +74,14 @@ Component({
           totalprice:(this.data.num)*(this.data.price)
         })
       },
+      handleaccount(){
+        this.setData({
+          dealaccount: {...this.data.dealaccount, price:this.data.totalprice }
+        })
+        let orderdata = JSON.stringify(this.data.dealaccount)
+       wx.navigateTo({
+         url: '/pages/mine/minepages/order/order?orderdata='+orderdata,
+       })
+      }
   }
 })

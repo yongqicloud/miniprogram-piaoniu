@@ -24,10 +24,13 @@
   text-align: center;
   margin-right:14rpx;
   margin-bottom: 10rpx;
-  font-size:22rpx;
+  font-size:28rpx;
   float:left;
-
 }
 .active{
-  color:red;
+  color:#ff2661;
+  border:solid 1px #ff2661;
+  background:url(//static.piaoniu.com/m/static/img/selected-tag.9a607f3.png) no-repeat ;
+  background-position: 142rpx 22rpx;
+  background-size:50rpx 34rpx;
 }

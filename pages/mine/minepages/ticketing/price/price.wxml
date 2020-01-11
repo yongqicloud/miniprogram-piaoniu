@@ -1,7 +1,7 @@
 <!--pages/mine/minepages/ticketing/price/price.wxml-->
 <view class="price">
-  <view class="title">选择飘档</view>
+  <view class="title">选择票档</view>
   <view class="pricelist">
-    <view wx:for="{{pricelist}}"  data-price="{{item.lowPrice}}"class="priceitem {{activestyle}}" bindtap="handlechoose">{{item.specification}}票档</view>
+    <view wx:for="{{pricelist}}" wx:key="*this" data-price="{{item.lowPrice}}" class="priceitem {{index == selectedindex?activestyle:''}}" bindtap="handlechoose" data-index="{{index}}">{{item.specification}}票档</view>
   </view>
 </view>
